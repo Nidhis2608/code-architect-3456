@@ -1,17 +1,18 @@
-import { Box } from '@chakra-ui/react';
+
 import React from 'react';
+import ImageCarousel from '../Components/Carousel';
+import PopularPlaces from '../Components/PopularDresses';
 import FirstDiv from '../Components/FirstDiv';
-
-
 
 const Homepage = () => {
   return (
-  <Box>
-      <Box>
-        <FirstDiv />
-      </Box>
-    </Box>
-  );
-};
+    <div>Homepage
+      <FirstDiv/>
+      <PopularPlaces />
+      <ImageCarousel />
+      
+    </div>
+  )
+  }
 
 export default Homepage;

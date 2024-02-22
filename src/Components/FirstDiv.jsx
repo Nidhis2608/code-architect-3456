@@ -1,6 +1,7 @@
-// FirstDiv.jsx
+
 import { Box, Heading } from '@chakra-ui/react';
-import backgroundImage from '../images/bg1.jpg';
+import backgroundImage from '../images/01.jpg';
+
 
 const FirstDiv = () => {
   return (
@@ -36,6 +37,12 @@ const FirstDiv = () => {
           Comfort and Love
         </Heading>
         <Heading as='h2' size='lg' color="maroon" fontFamily="poppins" fontWeight="bold">
+          Fashion Has Two Purposes
+        </Heading>
+        <Heading as='h2' size='lg' color="teal.500" fontFamily="poppins" fontWeight="bold">
+          Comfort and Love
+        </Heading>
+        <Heading as='h2' size='lg' color="teal.500" fontFamily="poppins" fontWeight="bold">
           Beauty Comes When Fashion Succeeds.
         </Heading>
       </Box>
