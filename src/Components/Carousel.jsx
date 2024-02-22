@@ -57,6 +57,7 @@ const ImageCarousel = () => {
     },
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextSlide = () => {
     const nextIndex = (currIndex + 1) % carouselData.length;
     setCurrIndex(nextIndex);
@@ -67,7 +68,7 @@ const ImageCarousel = () => {
       nextSlide();
     }, 4000);
     return () => clearInterval(intervalId);
-  }, [currIndex]);
+  }, [currIndex, nextSlide]);
 
   return (
     <Box p={8} 
