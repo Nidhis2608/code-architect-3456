@@ -29,13 +29,13 @@ const FirstDiv = () => {
         >
          Class Elegance Style
         </Heading>
-        <Heading as='h2' size='lg' color="Black" fontFamily="poppins" fontWeight="bold">
+        <Heading as='h2' size='lg' color="maroon" fontFamily="san-serif" fontWeight="bold">
           Fashion Has Two Purposes
         </Heading>
-        <Heading as='h2' size='lg' color="black" fontFamily="poppins" fontWeight="bold">
+        <Heading as='h2' size='lg' color="maroon" fontFamily="poppins" fontWeight="bold">
           Comfort and Love
         </Heading>
-        <Heading as='h2' size='lg' color="black" fontFamily="poppins" fontWeight="bold">
+        <Heading as='h2' size='lg' color="maroon" fontFamily="poppins" fontWeight="bold">
           Beauty Comes When Fashion Succeeds.
         </Heading>
       </Box>
