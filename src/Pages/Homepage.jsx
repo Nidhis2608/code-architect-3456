@@ -15,7 +15,7 @@ import {
 export const Homepage = () => {
   return (
     <>
-
+{/* footer section start */}
       <Box className='footerMain' bg='#159895' py={6} width='100%' >
         <VStack
           className="footer"
@@ -185,6 +185,7 @@ export const Homepage = () => {
           </VStack>
         </HStack>
       </Box>
+      {/* footer section end */}
     </>
   );
 };
