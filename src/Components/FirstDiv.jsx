@@ -28,7 +28,7 @@ const FirstDiv = () => {
           marginTop="70px"
           letterSpacing="2px"
         >
-         Class Elegance Style
+        Class Elegance Style
         </Heading>
         <Heading as='h2' size='lg' color="teal" fontFamily="san-serif" fontWeight="bold">
           Fashion Has Two Purposes
