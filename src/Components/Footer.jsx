@@ -91,42 +91,42 @@ const Footer = () => {
                     <Text fontSize="lg" mb={2} fontWeight="bold" color="#61dafb">
                         Explore
                     </Text>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    <Text  style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Sale
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Gift Card
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Store Locator
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                        Home
                        belonging
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                       
                        belonging
-                    </Link>
+                    </Text>
                 </Flex>
 
                 <Flex direction="column" mr={8}>
                     <Text fontSize="lg" mb={2} fontWeight="bold" color="#61dafb">
                         About
                     </Text>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Feedback
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Careers
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Take a tour
-                    </Link>
-                    <Link to="/" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Affiliate program
                         Investors
-                    </Link>
+                    </Text>
                  
                 </Flex>
 
@@ -134,18 +134,21 @@ const Footer = () => {
                     <Text fontSize="lg" mb={1} fontWeight="bold" color="#61dafb">
                         Help
                     </Text>
-                    <Link to="" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Contact us
-                    </Link>
-                    <Link to="" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Shipping
-                    </Link>
-                    <Link to="" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Return Process
-                    </Link>
-                    <Link to="" style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
                         Return Policy
-                    </Link>
+                    </Text>
+                    <Text style={{ textDecoration: 'none', color: '#61dafb', marginBottom: '0.5rem' }}>
+                        know more
+                    </Text>
                 </Flex>
 
                 <Flex direction="column" align="center">
@@ -156,31 +159,34 @@ const Footer = () => {
                         <Flex>
                             <IconButton
                                 as="a"
-                                href="https://www.facebook.com/your-fb-page"
+                                href="https://www.facebook.com/"
                                 target="_blank"
                                 aria-label="Facebook"
                                 icon={<FaFacebook />}
                                 mr={2}
                                 color="#61dafb"
+                                bg="white"
                                 _hover={{ color: '#1a8cf4' }}
                             />
                             <IconButton
                                 as="a"
-                                href="https://twitter.com/your-twitter-account"
+                                href="https://twitter.com/"
                                 target="_blank"
                                 aria-label="Twitter"
                                 icon={<FaTwitter />}
                                 mr={2}
                                 color="#61dafb"
+                                bg="white"
                                 _hover={{ color: '#1a8cf4' }}
                             />
                             <IconButton
                                 as="a"
-                                href="https://www.instagram.com/your-instagram-account"
+                                href="https://www.instagram.com/"
                                 target="_blank"
                                 aria-label="Instagram"
                                 icon={<FaInstagram />}
                                 color="#61dafb"
+                                bg="white"
                                 _hover={{ color: '#1a8cf4' }}
                             />
                         </Flex>
@@ -193,21 +199,23 @@ const Footer = () => {
                         <Flex>
                             <IconButton
                                 as="a"
-                                href="https://play.google.com/store/apps/your-app-id"
+                                href="https://play.google.com/store/apps/"
                                 target="_blank"
                                 aria-label="Google Play"
                                 icon={<FaGooglePlay />}
                                 mr={2}
                                 color="#61dafb"
+                                bg="white"
                                 _hover={{ color: '#1a8cf4' }}
                             />
                             <IconButton
                                 as="a"
-                                href="https://apps.apple.com/us/app/your-app-id"
+                                href="https://apps.apple.com/us/app/"
                                 target="_blank"
                                 aria-label="App Store"
                                 icon={<FaApple />}
                                 color="#61dafb"
+                                bg="white"
                                 _hover={{ color: '#1a8cf4' }}
                             />
                         </Flex>
