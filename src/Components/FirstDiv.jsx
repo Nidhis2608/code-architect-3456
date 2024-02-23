@@ -21,7 +21,7 @@ const FirstDiv = () => {
         <Heading
           as="h1"
           size="4xl"
-          color="teal"
+          color="black"
           mb={6}
           fontFamily="cursive"
           fontWeight="bold"
@@ -30,13 +30,7 @@ const FirstDiv = () => {
         >
          Class Elegance Style
         </Heading>
-        <Heading as='h2' size='lg' color="maroon" fontFamily="san-serif" fontWeight="bold">
-          Fashion Has Two Purposes
-        </Heading>
-        <Heading as='h2' size='lg' color="maroon" fontFamily="poppins" fontWeight="bold">
-          Comfort and Love
-        </Heading>
-        <Heading as='h2' size='lg' color="maroon" fontFamily="poppins" fontWeight="bold">
+        <Heading as='h2' size='lg' color="teal.500" fontFamily="san-serif" fontWeight="bold">
           Fashion Has Two Purposes
         </Heading>
         <Heading as='h2' size='lg' color="teal.500" fontFamily="poppins" fontWeight="bold">
