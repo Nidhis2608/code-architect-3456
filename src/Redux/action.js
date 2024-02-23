@@ -26,7 +26,7 @@ export const registerUser=(formData)=>(dispatch)=>{
     .then((res)=>{
       console.log(res.data)
     let allow=res.data.find((el)=>
-  el.email==formData.email && el.password==formData.password 
+  el.email===formData.email && el.password===formData.password 
     )
   console.log(allow)
   let token=Math.random();
