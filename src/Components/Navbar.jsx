@@ -123,7 +123,7 @@ const handleLogout=()=>{
               <ChakraLink
                 as={Link}
                 to='/'
-                style={{ textDecoration: 'none', padding: '10px', color: 'black', transition: 'color 0.3s',fontWeight:'bold',fontSize:'21px' }}
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold',fontSize:'21px' }}
                 _hover={{ color: 'white' }}
               >
                 Home
@@ -131,7 +131,7 @@ const handleLogout=()=>{
               <ChakraLink
                 as={Link}
                 to='/About'
-                style={{ textDecoration: 'none', padding: '10px', color: 'black', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
                 _hover={{ color: 'white' }}
               >
                 About
@@ -139,7 +139,7 @@ const handleLogout=()=>{
               <ChakraLink
                 as={Link}
                 to='/Women'
-                style={{ textDecoration: 'none', padding: '10px', color: 'black', transition: 'color 0.3s' ,fontWeight:'bold',fontSize:'20px'}}
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s' ,fontWeight:'bold',fontSize:'20px'}}
                 _hover={{ color: 'white' }}
               >
                 Women
@@ -147,7 +147,7 @@ const handleLogout=()=>{
               <ChakraLink
                 as={Link}
                 to='/Kids'
-                style={{ textDecoration: 'none', padding: '10px', color: 'black', transition: 'color 0.3s',fontWeight:'bold' ,fontSize:'20px'}}
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold' ,fontSize:'20px'}}
                 _hover={{ color: 'white' }}
               >
                 Kids
@@ -155,7 +155,7 @@ const handleLogout=()=>{
               <ChakraLink
                 as={Link}
                 to='/Men'
-                style={{ textDecoration: 'none', padding: '10px', color: 'black', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
                 _hover={{ color: 'white' }}
               >
                 Men
