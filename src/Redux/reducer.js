@@ -1,4 +1,3 @@
-import React from 'react'
 import {
 REGISTER_SUCCESS,  LOGIN_SUCCESS, LOGOUT_SUCCESS
 } from '../Redux/actionTypes';
