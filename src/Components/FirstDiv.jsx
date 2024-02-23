@@ -1,7 +1,7 @@
 
-// FirstDiv.jsx
 import { Box, Heading } from '@chakra-ui/react';
 import backgroundImage from '../images/01.jpg';
+
 
 const FirstDiv = () => {
   return (
@@ -21,7 +21,7 @@ const FirstDiv = () => {
         <Heading
           as="h1"
           size="4xl"
-          color="black.500"
+          color="black"
           mb={6}
           fontFamily="cursive"
           fontWeight="bold"
