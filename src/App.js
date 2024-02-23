@@ -1,3 +1,5 @@
+
+import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
 import './App.css';
 import Homepage from './Pages/Homepage';
@@ -10,7 +12,6 @@ function App() {
        </div>
 
     </ChakraProvider>
-    
   );
 }
 

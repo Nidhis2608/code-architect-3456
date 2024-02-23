@@ -1,7 +1,7 @@
 
-// FirstDiv.jsx
 import { Box, Heading } from '@chakra-ui/react';
 import backgroundImage from '../images/01.jpg';
+
 
 const FirstDiv = () => {
   return (
@@ -28,9 +28,9 @@ const FirstDiv = () => {
           marginTop="70px"
           letterSpacing="2px"
         >
-         Class Elegance Style
+        Class Elegance Style
         </Heading>
-        <Heading as='h2' size='lg' color="teal.500" fontFamily="san-serif" fontWeight="bold">
+        <Heading as='h2' size='lg' color="teal" fontFamily="san-serif" fontWeight="bold">
           Fashion Has Two Purposes
         </Heading>
         <Heading as='h2' size='lg' color="teal.500" fontFamily="poppins" fontWeight="bold">

@@ -1,0 +1,46 @@
+.signup {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-image: url("../images/12.gif.crdownload");
+    background-size: cover;
+}
+
+.subsignup {
+    width: 370px;
+    height: 485px;
+    margin: auto;
+    background-color: #159895;
+    border-radius: 18px;
+}
+
+.heading {
+    padding-top: 35px;
+    border-bottom: 2px solid aliceblue;
+    color: aliceblue;
+}
+
+.username {
+    margin: auto;
+    color: black;
+    border: 2px solid #159895;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.password {
+    color: black;
+    margin: auto;
+    border: 2px solid #159895;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 100px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    padding: 6px;
+}
