@@ -4,15 +4,23 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
+<<<<<<< HEAD
+=======
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+>>>>>>> main
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.1",
+=======
     "react-responsive-carousel": "^3.2.23",
+>>>>>>> main
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
