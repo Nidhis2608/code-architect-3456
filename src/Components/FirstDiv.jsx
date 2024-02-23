@@ -21,16 +21,16 @@ const FirstDiv = () => {
         <Heading
           as="h1"
           size="4xl"
-          color="black"
+          color="Black"
           mb={6}
           fontFamily="cursive"
           fontWeight="bold"
           marginTop="70px"
           letterSpacing="2px"
         >
-         Class Elegance Style
+        Class Elegance Style
         </Heading>
-        <Heading as='h2' size='lg' color="teal.500" fontFamily="san-serif" fontWeight="bold">
+        <Heading as='h2' size='lg' color="teal" fontFamily="san-serif" fontWeight="bold">
           Fashion Has Two Purposes
         </Heading>
         <Heading as='h2' size='lg' color="teal.500" fontFamily="poppins" fontWeight="bold">
