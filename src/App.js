@@ -5,11 +5,12 @@ import Homepage from './Pages/Homepage';
 function App() {
   return (
     <ChakraProvider>
-    <div className="App">
+        <div className="App">
           <Homepage />
-   </div>
+       </div>
 
-</ChakraProvider>
+    </ChakraProvider>
+    
   );
 }
 
