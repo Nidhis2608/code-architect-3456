@@ -21,7 +21,7 @@ const FirstDiv = () => {
         <Heading
           as="h1"
           size="4xl"
-          color="teal"
+          color="Black"
           mb={6}
           fontFamily="cursive"
           fontWeight="bold"
