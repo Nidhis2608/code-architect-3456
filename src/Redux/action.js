@@ -1,6 +1,5 @@
 import axios from "axios";
-import { LOGIN_SUCCESS, GET_DESTINATION_FAILURE, GET_DESTINATION_REQUEST, GET_DESTINATION_SUCCESS,GET_BOOKINGS_DATA_REQUEST,GET_BOOKINGS_DATA_SUCCESS,
-GET_BOOKINGS_DATA_FAILURE,DELETE_BOOKINGS_DATA_FAILURE,DELETE_BOOKINGS_DATA_SUCCESS,DELETE_BOOKINGS_DATA_REQUEST, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_REQUEST, LOGOUT_SUCCESS } from "../Redux/actionTypes";
+import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "../Redux/actionTypes";
 
 
 export const registerUser=(formData)=>(dispatch)=>{
@@ -38,7 +37,7 @@ export const registerUser=(formData)=>(dispatch)=>{
   else{
     alert("Invalid Credentials,Please Check the credentials")
   }
-      // dispatch({type:LOGIN_SUCCESS,payload:res.data})
+
     })
     .catch(error=>{
       resolve (false)

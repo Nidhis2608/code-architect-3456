@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <FirstDiv/>
+      <FirstDiv />
       <PopularPlaces />
       <ImageCarousel />
       <Footer />
