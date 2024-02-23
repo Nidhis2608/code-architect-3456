@@ -6,6 +6,7 @@ import PopularPlaces from '../Components/PopularDresses';
 import FirstDiv from '../Components/FirstDiv';
 import Footer from '../Components/Footer';
 import { Navbar } from '../Components/Navbar';
+import Reviews from '../Components/Reviews';
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
       <FirstDiv />
       <PopularPlaces />
       <ImageCarousel />
+      <Reviews />
       <Footer />
 
     </div>
