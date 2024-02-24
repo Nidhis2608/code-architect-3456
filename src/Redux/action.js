@@ -1,10 +1,10 @@
 import axios from "axios";
-import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "../Redux/actionTypes";
+import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "./actionTypes";
 
 
 export const registerUser=(formData)=>(dispatch)=>{
     dispatch({type:REGISTER_REQUEST})
-    axios.post('https://mockserver-3.onrender.com/users',formData)
+    axios.post('https://moke-api-server.onrender.com/users',formData)
     .then((res)=>{
       console.log(res.data)
       dispatch({type:REGISTER_SUCCESS,payload:res.data})
@@ -22,7 +22,7 @@ export const registerUser=(formData)=>(dispatch)=>{
   
    
     dispatch({type:LOGIN_REQUEST})
-    axios.get('https://moke-api-server.onrender.com/Users')
+    axios.get('https://moke-api-server.onrender.com/users')
     .then((res)=>{
       console.log(res.data)
     let allow=res.data.find((el)=>
