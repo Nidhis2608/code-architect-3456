@@ -41,7 +41,7 @@ const PopularPlaces = () => {
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Men's Clothing
+              Men's Clothing Dresses
             </Text>
           </Box>
 
