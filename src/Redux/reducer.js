@@ -1,14 +1,14 @@
-import React from 'react'
 import {
-REGISTER_SUCCESS,  LOGIN_SUCCESS, LOGOUT_SUCCESS
-} from '../Redux/actionTypes';
+REGISTER_SUCCESS,  LOGIN_SUCCESS, LOGOUT_SUCCESS, 
+} from './actionTypes';
 
 let initialstate = {
   isloading: false,
   iserror: false,
   users: [],
   isAuth: false,
-  token: null
+  token: null,
+  users:[],
 }
 
 

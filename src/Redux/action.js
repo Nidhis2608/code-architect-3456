@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "../Redux/actionTypes";
+import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "./actionTypes";
 
 
 export const registerUser=(formData)=>(dispatch)=>{
@@ -22,11 +22,11 @@ export const registerUser=(formData)=>(dispatch)=>{
   
    
     dispatch({type:LOGIN_REQUEST})
-    axios.get('https://moke-api-server.onrender.com/Users')
+    axios.get('https://moke-api-server.onrender.com/users')
     .then((res)=>{
       console.log(res.data)
     let allow=res.data.find((el)=>
-  el.email==formData.email && el.password==formData.password 
+  el.email===formData.email && el.password===formData.password 
     )
   console.log(allow)
   let token=Math.random();

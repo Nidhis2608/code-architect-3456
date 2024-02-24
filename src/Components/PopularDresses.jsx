@@ -26,28 +26,28 @@ const PopularPlaces = () => {
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Women's Dresses
+              Women's Clothing
             </Text>
           </Box>
 
           <Box w={['120%', '100%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D'
+              src='https://cdn17.nnnow.com/web-images/medium/styles/XWYVJY1LFEI/1668599080148/1.jpg'
               alt='...'
               objectFit='cover'
               w='120%'
               p={4}
-              h='20%'
+              h='10%'
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Men's Clothing
+              Men's Clothing Dresses
             </Text>
           </Box>
 
           <Box w={['100%', '60%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://www.babycouture.in/blog/wp-content/uploads/2022/01/Children-clothing.png'
+              src='https://i.pinimg.com/736x/85/fd/6c/85fd6cd5d80a291ed0abb70d80b3dbda.jpg'
               alt='...'
               objectFit='cover'
               w='100%'
