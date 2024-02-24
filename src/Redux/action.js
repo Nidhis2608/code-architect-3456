@@ -4,7 +4,7 @@ import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LO
 
 export const registerUser=(formData)=>(dispatch)=>{
     dispatch({type:REGISTER_REQUEST})
-    axios.post('https://mockserver-3.onrender.com/users',formData)
+    axios.post('https://moke-api-server.onrender.com/Users',formData)
     .then((res)=>{
       console.log(res.data)
       dispatch({type:REGISTER_SUCCESS,payload:res.data})
