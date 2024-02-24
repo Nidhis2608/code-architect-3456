@@ -31,7 +31,7 @@ export const Loginform = () => {
    
 
     // eslint-disable-next-line eqeqeq
-    if(formData.email==="admin@gmail.com"){
+    if(formData.email=="admin@gmail.com"){
       dispatch(loginUser(formData))
       .then(() => {
         toast({
@@ -79,7 +79,7 @@ export const Loginform = () => {
         })
       })
     }
-
+    
   };
   return (
     <div className='login'>
