@@ -167,7 +167,7 @@ const handleLogout=()=>{
 
           {isAuth ? <div style={{display:"flex",alignItems:"center",gap:"20px"}}>
 
-        <h2>Hello,{users[0].firstName}</h2>
+        <h2>Hii,{users[0].firstName}</h2>
         <Link to='/'> 
         
    <Button onClick={handleLogout}> Log out</Button>

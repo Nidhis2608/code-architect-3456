@@ -15,18 +15,18 @@ import {
     Spacer,
   } from '@chakra-ui/react'
 import axios from 'axios';
-import AddLocations from './AddLocations';
+// import AddLocations from './AddLocations';
 
-  async function DeleteLocation(id){
-    try {
-        let res= await axios.delete(`https://mockserver-3.onrender.com/locations/${id}`);
+//   async function DeleteLocation(id){
+//     try {
+//         let res= await axios.delete(`https://moke-api-server.onrender.com/Womens/${id}`);
         
-        console.log(res.data)
-        console.log(id)
-    } catch (error) {
-        console.log(error)
-    }
-}
+//         console.log(res.data)
+//         console.log(id)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
 
 export const AdminTable = ({props}) => {
   const [data,setData]=useState(props);
@@ -47,7 +47,7 @@ export const AdminTable = ({props}) => {
 
 
 const handleDelete=(postId)=>{
-  DeleteLocation(postId);
+  // DeleteLocation(postId);
   const x=data.filter((e)=>e.id!==postId)
   console.log(x)
   setData(x)
@@ -55,7 +55,7 @@ const handleDelete=(postId)=>{
 }
 
   return (<>
-      <AddLocations />
+      {/* <AddLocations /> */}
       <Spacer/>
     <TableContainer p={'5'}>
     <Table variant='striped' colorScheme={'blue'} >

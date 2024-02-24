@@ -19,7 +19,7 @@ import {
   } from '@chakra-ui/react'
 import axios from 'axios';
 
-const AddMeens=()=>{
+export const AddMens=({props})=>{
     const {isOpen , onOpen , onClose}=useDisclosure();
 
     const initialRef=React.useRef(null);

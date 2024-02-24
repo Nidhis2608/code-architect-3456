@@ -32,7 +32,7 @@ const PopularPlaces = () => {
 
           <Box w={['120%', '100%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://cdn17.nnnow.com/web-images/medium/styles/XWYVJY1LFEI/1668599080148/1.jpg'
+              src='https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10777836/2019/10/16/d9ae4409-16a9-4f7e-83b1-2022d3bf353c1571215965504-MANQ-Men-Blazers-6291571215962908-1.jpg'
               alt='...'
               objectFit='cover'
               w='120%'
@@ -41,13 +41,13 @@ const PopularPlaces = () => {
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Men's Clothing Dresses
+              Men's Clothing 
             </Text>
           </Box>
 
           <Box w={['100%', '60%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://i.pinimg.com/736x/85/fd/6c/85fd6cd5d80a291ed0abb70d80b3dbda.jpg'
+              src='https://www.suratsuit.in/product-img/Kid-s-Clothing-Set-Baba-Suit-B-1688391083.jpeg'
               alt='...'
               objectFit='cover'
               w='100%'

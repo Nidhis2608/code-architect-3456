@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     Table,
     Thead,
@@ -26,7 +26,8 @@ import axios from 'axios';
 }
 
 const Users = ({props}) => {
-
+  const [state,setState]=useState(true);
+  
     
   return (
     <TableContainer p={'10'}>
@@ -51,7 +52,7 @@ const Users = ({props}) => {
           <Td>{item.password}</Td>
          
           <Td><Button colorScheme='red' 
-        //   onClick={()=>handleDelete(item.id)} 
+          onClick={()=>{DeleteUser(item.id);setState(false)}} 
           >Delete</Button></Td>
         </Tr>
        

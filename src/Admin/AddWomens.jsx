@@ -19,7 +19,7 @@ import {
   } from '@chakra-ui/react'
 import axios from 'axios';
 
-const AddWomens=()=>{
+export const AddWomens=({props})=>{
     const {isOpen , onOpen , onClose}=useDisclosure();
 
     const initialRef=React.useRef(null);
