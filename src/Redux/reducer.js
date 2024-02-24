@@ -5,6 +5,7 @@ REGISTER_SUCCESS,  LOGIN_SUCCESS, LOGOUT_SUCCESS,
 let initialstate = {
   isloading: false,
   iserror: false,
+  users: [],
   isAuth: false,
   token: null,
   users:[],
