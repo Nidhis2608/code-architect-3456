@@ -26,18 +26,18 @@ const PopularPlaces = () => {
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Women's Dresses
+              Women's Clothing
             </Text>
           </Box>
 
           <Box w={['120%', '100%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D'
+              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn19huyZi0lz4H6Xa0rar1R6OiDK0cX5n1UJyYP--9EGLf1eJWvegZsEtcNPBCgexR2s8&usqp=CAU'
               alt='...'
               objectFit='cover'
               w='120%'
               p={4}
-              h='20%'
+              h='10%'
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>

@@ -81,7 +81,7 @@ const ImageCarousel = () => {
       <Carousel
         selectedItem={currIndex}
         onChange={index => setCurrIndex(index)}
-        style={{ width: "80%", margin: "0 auto", marginTop: "2rem" }}
+        style={{ width: "80%", margin: "0 auto", marginTop: "2rem" , height:"10px"}}
       >
         {carouselData.map((data, index) => (
           <Flex key={index} direction={['column', 'row']} alignItems="center" justifyContent="center">
