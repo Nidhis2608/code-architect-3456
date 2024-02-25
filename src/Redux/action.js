@@ -1,6 +1,11 @@
 import axios from "axios";
 import { LOGIN_SUCCESS, REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_SUCCESS } from "./actionTypes";
-
+export const addToCart = (product) => {
+  return {
+    type: 'ADD_TO_CART',
+    payload: product,
+  };
+};
 
 export const registerUser=(formData)=>(dispatch)=>{
     dispatch({type:REGISTER_REQUEST})
