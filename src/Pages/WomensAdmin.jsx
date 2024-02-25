@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
     Table,
     Thead,
@@ -16,7 +16,7 @@ import axios from 'axios';
 
 //    export async function DeleteUser(id){
 //     try {
-//         let res= await axios.delete(`https://moke-api-server.onrender.com/Users/${id}`);
+//         let res= await axios.delete(`https://moke-api-server.onrender.com/Mens/${id}`);
 //         console.log(res.data)
 //         console.log(id)
 //     } catch (error) {
@@ -24,11 +24,11 @@ import axios from 'axios';
 //     }
 // }
 
-export const Users = ({props,setState,state}) => {
+const WomenAdmin = ({props,setState,state}) => {
   // const [state,setState]=useState(true);
-   async function DeleteUser(id){
+  async function DeleteUser(id){
     try {
-        let res= await axios.delete(`https://moke-api-server.onrender.com/Users/${id}`);
+        let res= await axios.delete(`https://moke-api-server.onrender.com/Womens/${id}`);
         console.log(res.data);
         setState(!state)
         console.log(id)
@@ -36,34 +36,36 @@ export const Users = ({props,setState,state}) => {
         console.log(error)
     }
 }
-   
-  // useEffect(()=>{
-
-  // },[state]);
   return (
+
     <TableContainer p={'10'}>
     <Table variant='striped' >
-      <TableCaption>Users Available</TableCaption>
+      <TableCaption>Women's Available</TableCaption>
       <Thead>
         <Tr>
-          <Th>Name</Th>
-          <Th>Email</Th>
-          <Th>Password</Th>
+          <Th>Image</Th>
+          <Th>Title</Th>
+          <Th>Price</Th>
           <Th>Action</Th>
         </Tr>
       </Thead>
       <Tbody>
+        {/* {
+    "image": "https://rukminim2.flixcart.com/image/850/1000/jmccb680/sweater/g/q/m/10-11-years-ujsw5232-us-polo-kids-original-imaf995dw8sczyfr.jpeg?q=90&crop=false",
+    "title": "V-Neck Sweater",
+    "price": "$59.99"
+  }, */}
        { props.map(item=>{
         return (
           <Tr key={item.id} >
           <Td >
-           {`${item.firstName} ${item.lastName}`}
+           <Image src={item.image} style={{width:"40px"}}/>
           </Td>
-          <Td>{item.email}</Td>
-          <Td>{item.password}</Td>
+          <Td>{item.title}</Td>
+          <Td>{item.price}</Td>
          
           <Td><Button colorScheme='red' 
-          onClick={()=>{DeleteUser(item.id)}} 
+          onClick={()=>{DeleteUser(item.id|item.title)}} 
           >Delete</Button></Td>
         </Tr>
        
@@ -74,7 +76,8 @@ export const Users = ({props,setState,state}) => {
       
     </Table>
   </TableContainer>
+
   )
 }
 
-export default Users
+export default WomenAdmin

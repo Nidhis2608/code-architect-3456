@@ -15,7 +15,7 @@ import {
     Spacer,
   } from '@chakra-ui/react'
 import axios from 'axios';
-import AddLocations from './AddLocations';
+
 
   async function DeleteLocation(id){
     try {
@@ -55,7 +55,7 @@ const handleDelete=(postId)=>{
 }
 
   return (<>
-      <AddLocations />
+      {/* <AddLocations /> */}
       <Spacer/>
     <TableContainer p={'5'}>
     <Table variant='striped' colorScheme={'blue'} >
