@@ -30,6 +30,7 @@ import  SingleKids  from '../Pages/SingleKids';
 import PrivateRouting from './PrivateRouting';
 import Loginsignup from '../Pages/signup';
 import Login from '../Pages/Login';
+import AboutUs from '../Pages/AboutUs';
 const Allroutes = () => {
 
 

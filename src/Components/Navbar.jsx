@@ -83,7 +83,7 @@ const handleLogout=()=>{
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
-                        to='/About'
+                        to='/about'
                         style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
                         _hover={{ color: 'white' }}
                       >
