@@ -86,7 +86,7 @@ const AboutUs = () => {
               alt=""
               className="our-team-img"
             />{" "}
-            <h3>John Doe</h3> <p>CEO</p>
+            <h3>Nidhi</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
@@ -94,7 +94,7 @@ const AboutUs = () => {
               alt=""
               className="our-team-img"
             />{" "}
-            <h3>John Doe</h3> <p>CEO</p>
+            <h3>Anshu</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
@@ -102,7 +102,7 @@ const AboutUs = () => {
               alt=""
               className="our-team-img"
             />{" "}
-            <h3>John Doe</h3> <p>CEO</p>
+            <h3>Gulshaba</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
@@ -110,7 +110,7 @@ const AboutUs = () => {
               alt=""
               className="our-team-img"
             />{" "}
-            <h3>John Doe</h3> <p>CEO</p>
+            <h3>Khadim Khan</h3> <p>Full Stack Web Developer</p>
           </div>
         </div>
       </div>
