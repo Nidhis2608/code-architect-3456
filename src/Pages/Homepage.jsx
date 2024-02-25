@@ -10,7 +10,6 @@ import Reviews from '../Components/Reviews';
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
       <FirstDiv />
       <PopularPlaces />
       <ImageCarousel />
