@@ -34,6 +34,7 @@ import AboutUs from '../Pages/AboutUs';
 import SingleMens from '../Pages/Menscard';  
 
   import CartPage from '../Pages/Cartpage';
+import Admin from '../Pages/Admin';
 const Allroutes = () => {
 
 
@@ -43,6 +44,7 @@ const Allroutes = () => {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/admin" element={<Admin />}/>
       <Route path="/Women" element={<Womens />} />
       <Route path="/singleWomens/:id" element={<PrivateRouting><SingleWomens /></PrivateRouting>} />
       <Route path="/singleKids/:id" element={<PrivateRouting><SingleKids /></PrivateRouting>} />

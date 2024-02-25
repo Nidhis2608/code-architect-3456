@@ -124,7 +124,7 @@ const reducer = (state = initialstate, action) => {
       return { ...state, isloading: true }
 
     case DELETE_KIDS_DATA_SUCCESS:
-      const updatedbooking = state.mybooking.filter((booking) => booking.id != action.payload)
+      const updatedbooking = state.mybooking.filter((booking) => booking.id !== action.payload)
       return { ...state, isloading: false, mybooking: updatedbooking, iserror: false }
 
     case DELETE_KIDS_DATA_FAILURE:
@@ -133,7 +133,7 @@ const reducer = (state = initialstate, action) => {
         return { ...state, isloading: true }
   
     case DELETE_WOMENS_DATA_SUCCESS:
-        const updatedbooking1 = state.mybooking.filter((booking) => booking.id != action.payload)
+        const updatedbooking1 = state.mybooking.filter((booking) => booking.id !== action.payload)
         return { ...state, isloading: false, mybooking: updatedbooking1, iserror: false }
   
     case DELETE_WOMENS_DATA_FAILURE:
@@ -144,7 +144,7 @@ const reducer = (state = initialstate, action) => {
           return { ...state, isloading: true }
     
       case DELETE_MEN_DATA_SUCCESS:
-          const updatedbooking2 = state.mybooking.filter((booking) => booking.id != action.payload)
+          const updatedbooking2 = state.mybooking.filter((booking) => booking.id !== action.payload)
           return { ...state, isloading: false, mybooking: updatedbooking2, iserror: false }
     
       case DELETE_MEN_DATA_FAILURE:
