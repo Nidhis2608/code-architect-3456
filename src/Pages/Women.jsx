@@ -1,54 +1,201 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Box, Button, Image, Text } from '@chakra-ui/react';
-import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom'; // Import useLocation
+import {  fetchDestinationData1 } from '../Redux/action';
+import  SingleWomens  from './Womenscard';
+import { Box, Button, Select, HStack, Center } from '@chakra-ui/react';
+import SingleWomen from './Womenscard';
 
 const Women = () => {
-  const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { isloading, iserror, destination } = useSelector((state) => state);
+  const [filteredTours, setFilteredTours] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
+  const [sortOrder, setSortOrder] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState('');
+
+  const [filterByText, setFilterByText] = useState('');
+
+  
+  // Use useLocation to get the query parameter
+  const location = useLocation();
+  const searchInput = new URLSearchParams(location.search).get('country');
 
   useEffect(() => {
-    // Replace 'YOUR_ENDPOINT_HERE' with the specific endpoint for women's products if available
-    axios.get('https://moke-api-server.onrender.com/products')
-      .then(res => {
-        // Assuming the response has the data directly; adjust if nested
-        setProducts(res.data);
-      })
-      .catch(err => console.error(err));
-  }, []);
+    dispatch(fetchDestinationData1());
+  }, [dispatch]);
 
-  // Placeholder login check; replace with actual logic
-  const isLoggedIn = () => {
-    // Example: Check for an auth token in local storage
-    return localStorage.getItem('authToken') ? true : false;
-  };
+  useEffect(() => {
+    setFilteredTours(destination);
+  }, [destination]);
 
-  const handleViewDetails = (productId) => {
-    if (!isLoggedIn()) {
-      navigate('/login');
-    } else {
-      navigate(`/product/${productId}`);
+
+  
+
+  useEffect(() => {
+    let sortedTours = [...destination];
+    
+
+    if (sortOrder === 'asc' || sortOrder === 'desc') {
+      sortedTours = sortedTours.sort((a, b) => {
+        // Parse the offer prices as numbers for proper sorting
+        const costA = parseInt(a.price);
+        const costB = parseInt(b.price);
+        return sortOrder === 'asc' ? costA - costB : costB - costA;
+      });
     }
+
+    
+
+    if (selectedCountry) {
+      const filtered = sortedTours.filter((tour) => {
+        const countryValue = tour.country.toLowerCase();
+        return countryValue.includes(selectedCountry.toLowerCase());
+      });
+      setFilteredTours(filtered);
+    } else {
+      setFilteredTours(sortedTours);
+    }
+  }, [destination, sortOrder, selectedCountry,searchInput]);
+
+  
+  useEffect(() => {
+    if (searchInput) {
+      const filtered = destination.filter((tour) =>
+        tour.country.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      setFilteredTours(filtered);
+    }
+  }, [searchInput, destination]);
+
+  // useEffect(() => {
+  //   setSelectedCountry('');
+  // }, [searchInput]);
+  // useEffect(() => {
+  //   filteredTours.forEach((tour) => {
+  //     console.log(tour['customFade src']);
+  //   });
+  // }, [filteredTours]);
+
+
+  useEffect(() => {
+    if (filterByText) {
+      const filteredByText = destination.filter((tour) =>
+        tour["title"].toLowerCase().includes(filterByText.toLowerCase())
+      );
+      setFilteredTours(filteredByText);
+    } else {
+      setFilteredTours(destination);
+    }
+  }, [filterByText, destination]);
+
+  
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredTours.slice(indexOfFirstItem, indexOfLastItem);
+
+
+
+  
+
+  useEffect(() => {
+    currentItems.forEach((item) => {
+      console.log('Tour Object:', item);
+      console.log('Image URL:', item['image']);
+    });
+  }, [currentItems]);
+  
+
+  const nextPage = () => {
+    setCurrentPage((prevPage) => prevPage + 1);
   };
 
-  const handleAddToCart = (productId) => {
-    // Implement add to cart functionality
-    // This could involve dispatching a Redux action with the product ID
-    console.log(`Product ${productId} added to cart`);
+  const prevPage = () => {
+    setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
   };
 
-  return (
+  const getUniqueTexts = () => {
+    const uniqueTexts = [...new Set(destination.map((tour) => tour["title"]))];
+    return uniqueTexts;
+  };
+
+  
+
+ return (
     <Box>
-      {products.map((product) => (
-        <Box key={product.id} p="5" boxShadow="md" borderWidth="1px" mb="4">
-          <Image src={product.image} alt={product.title} boxSize="200px" objectFit="cover" />
-          <Text mb="2">{product.title}</Text>
-          <Button colorScheme="blue" mr="4" onClick={() => handleAddToCart(product.id)}>Add to Cart</Button>
-          <Button onClick={() => handleViewDetails(product.id)}>View Details</Button>
-        </Box>
-      ))}
+      <Box>
+        {isloading ? (
+          <p>Loading...</p>
+        ) : iserror ? (
+          <p>Error loading destination data.</p>
+        ) : (
+          <Box>
+            <Center>
+              <HStack spacing={4} mt={13}>
+                <Select
+                  border="1px solid teal"
+                  placeholder="Sort by cost"
+                  onChange={(e) => setSortOrder(e.target.value)}
+                  value={sortOrder}
+                >
+                  <option value="asc">Ascending</option>
+                  <option value="desc">Descending</option>
+                </Select>
+
+                <Select
+                  border="1px solid teal"
+                  placeholder="Filter by text"
+                  onChange={(e) => setFilterByText(e.target.value)}
+                  value={filterByText}
+                >
+                  <option value="">Brands</option>
+                  {getUniqueTexts().map((text) => (
+                    <option key={text} value={text}>
+                      {text}
+                    </option>
+                  ))}
+                </Select>
+              </HStack>
+            </Center>
+
+            <Box data-cy="tour-list" className="tour-list" mt="10" style={{ marginLeft: '90px' }} >
+              <Box
+              gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(4, 1fr)'}}
+                style={{ display: 'grid'  , gap: '16px', justifyContent: 'center' }}
+              >
+                {/* {currentItems.map((item) => (
+                  <SingleKid key={item.id} tour={item} />
+                ))} */}
+                {currentItems.map((item) => {
+  console.log(item['image']); 
+ 
+  return <SingleWomen key={item.id} tour={item} />;
+})}
+              </Box>
+
+              <Center mt={4}>
+                <HStack spacing={4} mt={3} mb={3} ml={-20}>
+                  <Button onClick={prevPage} disabled={currentPage === 1} border="1px solid teal" colorScheme="teal">
+                    Previous
+                  </Button>
+                  <Button
+                    onClick={nextPage}
+                    disabled={indexOfLastItem >= filteredTours.length}
+                    border="1px solid teal"
+                    colorScheme="teal"
+                  >
+                    Next
+                  </Button>
+                </HStack>
+              </Center>
+            </Box>
+          </Box>
+        )}
+      </Box>
     </Box>
   );
 };
+
 
 export default Women;

@@ -22,6 +22,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Women from '../Pages/Women';
+import SingleWomens from '../Pages/Womenscard';
 import Kids from '../Pages/Kids';
 import Men from '../Pages/Men';
 import Homepage from '../Pages/Homepage';
@@ -40,6 +41,7 @@ const Allroutes = () => {
       <Route path="/" element={<Homepage />} />
       {/* <Route path="/booking" element={<Bookingpage />} /> */}
       <Route path="/Women" element={<Women />} />
+      <Route path="/singleWomens/:id" element={<PrivateRouting><SingleWomens /></PrivateRouting>} />
       <Route path="/singleKids/:id" element={<PrivateRouting><SingleKids /></PrivateRouting>} />
       <Route path="/Kids" element={<Kids />} />
       <Route path="/Men" element={<Men />} />
