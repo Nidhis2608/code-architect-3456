@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom'; // Import useLocation
+
 import {  fetchDestinationData2 } from '../Redux/action';
+
 import  SingleMen  from './Menscard';
 import { Box, Button, Select, HStack, Center } from '@chakra-ui/react';
 
