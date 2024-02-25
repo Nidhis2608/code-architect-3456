@@ -4,6 +4,7 @@ import Homepage from '../Pages/Homepage';
 import Loginsignup from '../Pages/signup';
 import Login from '../Pages/Login';
 import AboutUs from '../Pages/AboutUs';
+import Men from '../Pages/Men';
 const Allroutes = () => {
 
 
@@ -14,6 +15,7 @@ const Allroutes = () => {
         <Route path="/signup" element={<Loginsignup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/men" element={<Men />} />
       </Routes>
   );
 };
