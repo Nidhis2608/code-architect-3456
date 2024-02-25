@@ -12,7 +12,9 @@ const SingleWomen = ({ tour }) => {
 
   useEffect(() => {
     console.log('Tour Object:', tour);
+
     console.log('Image URL:', tour['image']);
+
   }, [tour]);
 
   return (

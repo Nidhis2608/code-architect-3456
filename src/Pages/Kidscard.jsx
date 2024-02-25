@@ -13,7 +13,9 @@ const SingleKid = ({ tour }) => {
 
   useEffect(() => {
     console.log('Tour Object:', tour);
+
     console.log('Image URL:', tour['image']);
+
   }, [tour]);
 
   return (
@@ -29,7 +31,9 @@ const SingleKid = ({ tour }) => {
     >
         {/* ------------------------------------- */}
       <Image
+
         src={tour['image']}
+
         alt="img"
         width="100%"
         height="300px"
@@ -39,11 +43,13 @@ const SingleKid = ({ tour }) => {
 {/* ------------------------------------------------------------ */}
       <Box p={4}>
         
+
       <Heading fontSize="xl" data-cy="title">
         <Text data-cy="product-description">{tour['title']}</Text>
         </Heading>
 
         <Text data-cy="product-description">{tour['price']}</Text>
+
        
         <Button
           data-cy="view-details-btn"

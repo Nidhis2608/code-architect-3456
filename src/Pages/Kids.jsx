@@ -51,6 +51,7 @@ const Kids = () => {
     if (sortOrder === 'asc' || sortOrder === 'desc') {
       sortedTours = sortedTours.sort((a, b) => {
         // Parse the offer prices as numbers for proper sorting
+
         const costA = parseInt(a.price);
         const costB = parseInt(b.price);
         return sortOrder === 'asc' ? costA - costB : costB - costA;
@@ -93,7 +94,9 @@ const Kids = () => {
   useEffect(() => {
     if (filterByText) {
       const filteredByText = destination.filter((tour) =>
+
         tour["title"].toLowerCase().includes(filterByText.toLowerCase())
+
       );
       setFilteredTours(filteredByText);
     } else {
@@ -113,7 +116,9 @@ const Kids = () => {
   useEffect(() => {
     currentItems.forEach((item) => {
       console.log('Tour Object:', item);
+
       console.log('Image URL:', item['image']);
+
     });
   }, [currentItems]);
   
@@ -127,7 +132,9 @@ const Kids = () => {
   };
 
   const getUniqueTexts = () => {
+
     const uniqueTexts = [...new Set(destination.map((tour) => tour["title"]))];
+
     return uniqueTexts;
   };
 
@@ -179,7 +186,9 @@ const Kids = () => {
                   <SingleKid key={item.id} tour={item} />
                 ))} */}
                 {currentItems.map((item) => {
+
   console.log(item['image']); 
+
  
   return <SingleKid key={item.id} tour={item} />;
 })}
