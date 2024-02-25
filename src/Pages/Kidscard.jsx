@@ -13,7 +13,7 @@ const SingleKid = ({ tour }) => {
 
   useEffect(() => {
     console.log('Tour Object:', tour);
-    console.log('Image URL:', tour['customFade src']);
+    console.log('Image URL:', tour['image']);
   }, [tour]);
 
   return (
@@ -29,7 +29,7 @@ const SingleKid = ({ tour }) => {
     >
         {/* ------------------------------------- */}
       <Image
-        src={tour['customFade src']}
+        src={tour['image']}
         alt="img"
         width="100%"
         height="300px"
@@ -39,14 +39,11 @@ const SingleKid = ({ tour }) => {
 {/* ------------------------------------------------------------ */}
       <Box p={4}>
         
-        <Heading fontSize="xl" data-cy="product-name">
-        
+      <Heading fontSize="xl" data-cy="title">
+        <Text data-cy="product-description">{tour['title']}</Text>
         </Heading>
-        <Text data-cy="product-description">{tour['listprice']}</Text>
-        <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
-          PRICE:{tour['product-price']}
-        </Text>
-        <Text data-cy="product-offer" color="teal.500" mt={2}>OFFER:{tour['offer']}</Text>
+
+        <Text data-cy="product-description">{tour['price']}</Text>
        
         <Button
           data-cy="view-details-btn"
