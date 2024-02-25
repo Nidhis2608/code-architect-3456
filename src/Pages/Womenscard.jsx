@@ -1,14 +1,13 @@
 
-// SingleKid.jsx
 import React, { useEffect } from 'react';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
-const SingleKid = ({ tour }) => {
+const SingleWomen = ({ tour }) => {
   const navigate = useNavigate();
 
   const handleDetailsPage = () => {
-    navigate(`/singleKids/${tour.id}`);
+    navigate(`/singleWomens/${tour.id}`);
   };
 
   useEffect(() => {
@@ -31,9 +30,7 @@ const SingleKid = ({ tour }) => {
     >
         {/* ------------------------------------- */}
       <Image
-
         src={tour['image']}
-
         alt="img"
         width="100%"
         height="300px"
@@ -43,13 +40,15 @@ const SingleKid = ({ tour }) => {
 {/* ------------------------------------------------------------ */}
       <Box p={4}>
         
-
-      <Heading fontSize="xl" data-cy="title">
+        <Heading fontSize="xl" data-cy="title">
         <Text data-cy="product-description">{tour['title']}</Text>
         </Heading>
 
         <Text data-cy="product-description">{tour['price']}</Text>
-
+        {/* <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
+          PRICE:{tour['product-price']}
+        </Text> */}
+        {/* <Text data-cy="product-offer" color="teal.500" mt={2}>OFFER:{tour['offer']}</Text> */}
        
         <Button
           data-cy="view-details-btn"
@@ -65,5 +64,5 @@ const SingleKid = ({ tour }) => {
   );
 };
 
-export default SingleKid;
+export default SingleWomen;
 

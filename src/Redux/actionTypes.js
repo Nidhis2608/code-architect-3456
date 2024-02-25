@@ -46,11 +46,28 @@ export const GET_KIDS_DATA_FAILURE = "GET_KIDS_DATA_FAILURE";
 
 //satmrngchanegspraveen
 
-export const DELETE_KIDS_DATA_REQUEST = "DELETE_KIDS_DATA_REQUEST";
-export const DELETE_KIDS_DATA_SUCCESS = "DELETE_KIDS_DATA_SUCCESS";
-export const DELETE_KIDS_DATA_FAILURE = "DELETE_KIDS_DATA_FAILURE";
+
+export const DELETE_KIDS_DATA_REQUEST = "DELETE_KID_DATA_REQUEST";
+export const DELETE_KIDS_DATA_SUCCESS = "DELETE_KID_DATA_SUCCESS";
+export const DELETE_KIDS_DATA_FAILURE = "DELETE_KID_DATA_FAILURE";
 
 
+export const GET_WOMEN_REQUEST = "GET_DATA_REQUEST";
+export const GET_WOMEN_SUCCESS = "GET_DATA_SUCCESS";
+export const GET_WOMEN_FAILURE = "GET_DATA_FAILURE";
+
+
+///when clicked on book button on a paclage,this actions are dispatched
+export const GET_WOMEN_DATA_REQUEST = "GET_WOMEN_DATA_REQUEST";
+export const GET_WOMEN_DATA_SUCCESS = "GET_WOMEN_DATA_SUCCESS";
+export const GET_WOMEN_DATA_FAILURE = "GET_WOMEN_DATA_FAILURE";
+
+
+//satmrngchanegspraveen
+
+export const DELETE_WOMEN_DATA_REQUEST = "DELETE_WOMEN_DATA_REQUEST";
+export const DELETE_WOMEN_DATA_SUCCESS = "DELETE_WOMEN_DATA_SUCCESS";
+export const DELETE_WOMEN_DATA_FAILURE = "DELETE_WOMEN_DATA_FAILURE";
 
 
 
@@ -73,3 +90,25 @@ export const LOGIN_FAILURE = "LOGIN_FAILURE";
 export const LOGOUT_REQUEST = "LOGOUT_REQUEST";
 export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
 export const LOGOUT_FAILURE = "LOGOUT_FAILURE";
+
+export const ADD_TO_CART = "ADD_TO_CART";
+
+
+export const GET_MEN_REQUEST = "GET_DATA_REQUEST";
+export const GET_MEN_SUCCESS = "GET_DATA_SUCCESS";
+export const GET_MEN_FAILURE = "GET_DATA_FAILURE";
+
+
+///when clicked on book button on a paclage,this actions are dispatched
+export const GET_MEN_DATA_REQUEST = "GET_MENS_DATA_REQUEST";
+export const GET_MEN_DATA_SUCCESS = "GET_MENS_DATA_SUCCESS";
+export const GET_MEN_DATA_FAILURE = "GET_MENS_DATA_FAILURE";
+
+
+//satmrngchanegspraveen
+
+export const DELETE_MEN_DATA_REQUEST = "DELETE_MEN_DATA_REQUEST";
+export const DELETE_MEN_DATA_SUCCESS = "DELETE_MEN_DATA_SUCCESS";
+export const DELETE_MEN_DATA_FAILURE = "DELETE_MEN_DATA_FAILURE";
+
+

@@ -107,7 +107,7 @@ const handleLogout=()=>{
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
-                        to='/Men'
+                        to='/men'
                         style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
                         onClick={onClose}
                       >

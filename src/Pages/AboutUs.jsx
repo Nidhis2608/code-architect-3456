@@ -2,7 +2,7 @@ import React from 'react'
 import "../CSS/about.css"
 const AboutUs = () => {
   return (
-    <div>
+    <div className="About-us">
       <div id="cover">
         <img
           src="https://intexsoft.com/app/uploads/2023/12/1920x568-Benefits-of-Choosing-Shopify-for-Ecommerce-Store-Development.jpg"
