@@ -44,9 +44,11 @@ import React from 'react'
 import {
   GET_KIDS_DATA_FAILURE, GET_KIDS_DATA_REQUEST, GET_KIDS_DATA_SUCCESS,
   GET_KIDS_FAILURE, GET_KIDS_REQUEST, GET_KIDS_SUCCESS, DELETE_KIDS_DATA_REQUEST, DELETE_KIDS_DATA_FAILURE, DELETE_KIDS_DATA_SUCCESS,GET_WOMEN_DATA_FAILURE, GET_WOMEN_DATA_REQUEST, GET_WOMEN_DATA_SUCCESS,
+
   GET_WOMEN_FAILURE, GET_WOMEN_REQUEST, GET_WOMEN_SUCCESS, DELETE_WOMEN_DATA_REQUEST, DELETE_WOMEN_DATA_FAILURE, DELETE_WOMEN_DATA_SUCCESS ,REGISTER_REQUEST, REGISTER_FAILURE, REGISTER_SUCCESS, LOGIN_REQUEST, LOGIN_FAILURE, LOGIN_SUCCESS, LOGOUT_SUCCESS ,
   GET_MEN_DATA_FAILURE, GET_MEN_DATA_REQUEST, GET_MEN_DATA_SUCCESS,
   GET_MEN_FAILURE, GET_MEN_REQUEST, GET_MEN_SUCCESS, DELETE_MEN_DATA_REQUEST, DELETE_MEN_DATA_FAILURE, DELETE_MEN_DATA_SUCCESS
+
 } from './actionTypes';
 
 let initialstate = {
@@ -76,12 +78,14 @@ const reducer = (state = initialstate, action) => {
       case GET_WOMEN_FAILURE:
         return { ...state, isloading: false, iserror: true };
 
+
         case GET_MEN_REQUEST:
           return { ...state, isloading: true };
         case GET_MEN_SUCCESS:
           return { ...state, isloading: false, destination: action.payload };
         case GET_MEN_FAILURE:
           return { ...state, isloading: false, iserror: true };
+
 
 
   
@@ -102,11 +106,13 @@ const reducer = (state = initialstate, action) => {
     case GET_WOMEN_DATA_FAILURE || REGISTER_FAILURE || LOGIN_FAILURE:
       return { ...state, isloading: false, iserror: true }
 
+
       case GET_MEN_DATA_SUCCESS:
       return { ...state, isloading: false, mybooking: action.payload }
 
     case GET_MEN_DATA_FAILURE || REGISTER_FAILURE || LOGIN_FAILURE:
       return { ...state, isloading: false, iserror: true }
+
 
     case REGISTER_SUCCESS:
       return { ...state, isloading: false, iserror: false, users: [action.payload] }
@@ -133,6 +139,7 @@ const reducer = (state = initialstate, action) => {
   
     case DELETE_WOMEN_DATA_FAILURE:
         return { ...state, isloading: false, iserror: true }
+
 
         case DELETE_MEN_DATA_REQUEST:
           return { ...state, isloading: true }
