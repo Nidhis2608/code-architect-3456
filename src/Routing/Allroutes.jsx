@@ -24,7 +24,6 @@ import { Route, Routes } from 'react-router-dom';
 import Women from '../Pages/Women';
 import Kids from '../Pages/Kids';
 import Men from '../Pages/Men';
-import AboutUs from '../Pages/AboutUs';
 import Homepage from '../Pages/Homepage';
 import  SingleKids  from '../Pages/SingleKids';
 import PrivateRouting from './PrivateRouting';
@@ -47,7 +46,7 @@ const Allroutes = () => {
       {/* <Route path="/login" element={<Login />} /> */}
       <Route path="/about" element={<AboutUs />}/>
       <Route path="/signup" element={<Loginsignup />} />
-       <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Login />} />
 
     </Routes>
 
