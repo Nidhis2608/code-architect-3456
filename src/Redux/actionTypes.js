@@ -94,6 +94,7 @@ export const LOGOUT_FAILURE = "LOGOUT_FAILURE";
 export const ADD_TO_CART = "ADD_TO_CART";
 
 
+
 export const GET_MEN_REQUEST = "GET_DATA_REQUEST";
 export const GET_MEN_SUCCESS = "GET_DATA_SUCCESS";
 export const GET_MEN_FAILURE = "GET_DATA_FAILURE";
