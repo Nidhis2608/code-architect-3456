@@ -61,9 +61,9 @@
 
 import axios from "axios";
 import { LOGIN_SUCCESS, GET_KIDS_FAILURE, GET_KIDS_REQUEST, GET_KIDS_SUCCESS,GET_KIDS_DATA_REQUEST,GET_KIDS_DATA_SUCCESS,
-GET_KIDS_DATA_FAILURE,DELETE_KIDS_DATA_FAILURE,DELETE_KIDS_DATA_SUCCESS,DELETE_KIDS_DATA_REQUEST, GET_WOMEN_FAILURE, GET_WOMEN_REQUEST, GET_WOMEN_SUCCESS,GET_WOMEN_DATA_REQUEST,GET_WOMEN_DATA_SUCCESS,
+GET_KIDS_DATA_FAILURE,DELETE_KIDS_DATA_FAILURE,DELETE_KIDS_DATA_SUCCESS,DELETE_KIDS_DATA_REQUEST, GET_WOMENS_FAILURE, GET_WOMENS_REQUEST, GET_WOMENS_SUCCESS,GET_WOMENS_DATA_REQUEST,GET_WOMENS_DATA_SUCCESS,
 
-GET_WOMEN_DATA_FAILURE,DELETE_WOMEN_DATA_FAILURE,DELETE_WOMEN_DATA_SUCCESS,DELETE_WOMEN_DATA_REQUEST,REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_REQUEST, LOGOUT_SUCCESS,
+GET_WOMENS_DATA_FAILURE,DELETE_WOMENS_DATA_FAILURE,DELETE_WOMENS_DATA_SUCCESS,DELETE_WOMENS_DATA_REQUEST,REGISTER_REQUEST, REGISTER_SUCCESS, REGISTER_FAILURE, LOGIN_REQUEST, LOGIN_FAILURE, LOGOUT_REQUEST, LOGOUT_SUCCESS,
 GET_MEN_FAILURE, GET_MEN_REQUEST, GET_MEN_SUCCESS,GET_MEN_DATA_REQUEST,GET_MEN_DATA_SUCCESS,
 GET_MEN_DATA_FAILURE,DELETE_MEN_DATA_FAILURE,DELETE_MEN_DATA_SUCCESS,DELETE_MEN_DATA_REQUEST } from "./actionTypes";
 
@@ -135,31 +135,31 @@ export const deleteBookingFailure = () => ({
 })
 // -----------------Anshu--------------
 export const fetchDestinationRequest1 = () => ({
-  type:GET_WOMEN_REQUEST,
+  type:GET_WOMENS_REQUEST,
 });
 
 export const fetchDestinationSuccess1 = (desti) => ({
-  type: GET_WOMEN_SUCCESS,
+  type: GET_WOMENS_SUCCESS,
   payload: desti,
 });
 
 export const fetchDestinationFailure1 = () => ({
-  type: GET_WOMEN_FAILURE,
+  type: GET_WOMENS_FAILURE,
 });
 
 
 // Feytching Destination Data
 export const fetchDestinationData1 = () => {
   return async (dispatch) => {
-    dispatch(fetchDestinationRequest());
+    dispatch(fetchDestinationRequest1());
     try {
       const response = await axios.get('https://moke-api-server.onrender.com/Womens');
       let data =response.data
       console.log(response.data); 
       console.log(data)
-      dispatch(fetchDestinationSuccess(data));
+      dispatch(fetchDestinationSuccess1(data));
     } catch (error) {
-      dispatch(fetchDestinationFailure());
+      dispatch(fetchDestinationFailure1());
     }
   };
 };
@@ -168,33 +168,33 @@ export const fetchDestinationData1 = () => {
 
 
 export const fetchBookingRequest1 = () => ({
-type: GET_WOMEN_DATA_REQUEST
+type: GET_WOMENS_DATA_REQUEST
 })
 
 export const fetchBookingSucess1 = (mybooking) => ({
-type: GET_WOMEN_DATA_SUCCESS,
+type: GET_WOMENS_DATA_SUCCESS,
 payload: mybooking
 })
 
 
 export const fetchBookingFailure1 = () => ({
-type: GET_WOMEN_DATA_FAILURE,
+type: GET_WOMENS_DATA_FAILURE,
 })
 
 
 
 export const deleteBookingRequest1 = () => ({
-type: DELETE_WOMEN_DATA_REQUEST
+type: DELETE_WOMENS_DATA_REQUEST
 })
 
 export const deleteBookingSuccess1 = (mybooking) => ({
-type: DELETE_WOMEN_DATA_SUCCESS,
+type: DELETE_WOMENS_DATA_SUCCESS,
 payload: mybooking
 })
 
 
 export const deleteBookingFailure1 = () => ({
-type: DELETE_WOMEN_DATA_FAILURE,
+type: DELETE_WOMENS_DATA_FAILURE,
 })
 
 
