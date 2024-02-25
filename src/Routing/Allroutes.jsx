@@ -35,6 +35,7 @@ const Allroutes = () => {
 
 
 
+
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
@@ -46,9 +47,10 @@ const Allroutes = () => {
       {/* <Route path="/login" element={<Login />} /> */}
       <Route path="/about" element={<AboutUs />}/>
       <Route path="/signup" element={<Loginsignup />} />
-//       <Route path="/login" element={<Login />} />
+       <Route path="/login" element={<Login />} />
 
     </Routes>
+
   );
 };
 
