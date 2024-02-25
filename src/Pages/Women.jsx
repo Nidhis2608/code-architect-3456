@@ -253,10 +253,20 @@ const Women = () => {
   }, [destination, sortOrder, selectedCountry,searchInput]);
 
   
+  // useEffect(() => {
+  //   if (searchInput) {
+  //     const filtered = destination.filter((tour) =>
+  //       tour.country.toLowerCase().includes(searchInput.toLowerCase())
+  //     );
+  //     setFilteredTours(filtered);
+  //   }
+  // }, [searchInput, destination]);
   useEffect(() => {
     if (searchInput) {
       const filtered = destination.filter((tour) =>
-        tour.country.toLowerCase().includes(searchInput.toLowerCase())
+         tour.country.toLowerCase().includes(searchInput.toLowerCase()) ||
+        // tour.country && tour.country.toLowerCase().includes(searchInput.toLowerCase())
+        tour.country &&  tour.country.toLowerCase().includes(searchInput.toLowerCase())
       );
       setFilteredTours(filtered);
     }
@@ -275,7 +285,7 @@ const Women = () => {
   useEffect(() => {
     if (filterByText) {
       const filteredByText = destination.filter((tour) =>
-
+        tour["title"] && 
         tour["title"].toLowerCase().includes(filterByText.toLowerCase())
 
       );

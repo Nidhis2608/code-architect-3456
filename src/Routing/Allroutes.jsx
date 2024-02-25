@@ -31,7 +31,7 @@ import PrivateRouting from './PrivateRouting';
 import Loginsignup from '../Pages/signup';
 import Login from '../Pages/Login';
 import AboutUs from '../Pages/AboutUs';
-import SingleMens from '../Pages/Menscard';  
+import SingleMens from '../Pages/SingleMens';  
 
   import CartPage from '../Pages/Cartpage';
 import Admin from '../Pages/Admin';
