@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-
+import SingleKids from "./SingleKids"
 const SingleKid = ({ tour }) => {
   const navigate = useNavigate();
 
