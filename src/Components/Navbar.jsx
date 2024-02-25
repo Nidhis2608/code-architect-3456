@@ -83,11 +83,11 @@ const handleLogout=()=>{
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
-                        to='/about'
+                        to='/men'
                         style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
                         _hover={{ color: 'white' }}
                       >
-                        About
+                        Men
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
@@ -107,11 +107,19 @@ const handleLogout=()=>{
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
-                        to='/men'
+                        to='/cart'
                         style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
                         onClick={onClose}
                       >
-                        Men
+                        Cart
+                      </ChakraLink>
+                      <ChakraLink
+                        as={Link}
+                        to='/about'
+                        style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
+                        onClick={onClose}
+                      >
+                        About
                       </ChakraLink>
                     </Stack>
                   </DrawerBody>
@@ -130,11 +138,11 @@ const handleLogout=()=>{
               </ChakraLink>
               <ChakraLink
                 as={Link}
-                to='/About'
+                to='/men'
                 style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
                 _hover={{ color: 'white' }}
               >
-                About
+                Men
               </ChakraLink>
               <ChakraLink
                 as={Link}
@@ -154,11 +162,19 @@ const handleLogout=()=>{
               </ChakraLink>
               <ChakraLink
                 as={Link}
-                to='/Men'
+                to='/cart'
+                style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold' ,fontSize:'20px'}}
+                _hover={{ color: 'white' }}
+              >
+                Cart
+              </ChakraLink>
+              <ChakraLink
+                as={Link}
+                to='/About'
                 style={{ textDecoration: 'none', padding: '10px', color: 'gray.600', transition: 'color 0.3s',fontWeight:'bold',fontSize:'20px' }}
                 _hover={{ color: 'white' }}
               >
-                Men
+                About
               </ChakraLink>
             </>
           )}

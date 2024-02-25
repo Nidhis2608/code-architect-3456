@@ -32,6 +32,8 @@ import Loginsignup from '../Pages/signup';
 import Login from '../Pages/Login';
 import AboutUs from '../Pages/AboutUs';
 import SingleMens from '../Pages/Menscard';  
+
+  import CartPage from '../Pages/Cartpage';
 const Allroutes = () => {
 
 
@@ -40,7 +42,7 @@ const Allroutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
-      {/* <Route path="/booking" element={<Bookingpage />} /> */}
+      <Route path="/cart" element={<CartPage />} />
       <Route path="/Women" element={<Women />} />
       <Route path="/singleWomens/:id" element={<PrivateRouting><SingleWomens /></PrivateRouting>} />
       <Route path="/singleKids/:id" element={<PrivateRouting><SingleKids /></PrivateRouting>} />

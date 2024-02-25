@@ -71,7 +71,7 @@ GET_MEN_DATA_FAILURE,DELETE_MEN_DATA_FAILURE,DELETE_MEN_DATA_SUCCESS,DELETE_MEN_
 const DestiUrl="https://moke-api-server.onrender.com/Kids";
 
 
-const bookingUrl = "https://mockserver-3.onrender.com/bookings";
+const bookingUrl = "https://moke-api-server.onrender.com/Cart";
 
 
 export const fetchDestinationRequest = () => ({
@@ -287,7 +287,7 @@ export const deleteBookingData = (id) => {
   return async (dispatch) => {
     dispatch(deleteBookingRequest())
     try {
-      const res = await axios.delete(`https://mockserver-3.onrender.com/bookings/${id}`)
+      const res = await axios.delete(`https://moke-api-server.onrender.com/Cart/${id}`)
       dispatch(deleteBookingSuccess(id))
     } catch (error) {
       dispatch(deleteBookingFailure())

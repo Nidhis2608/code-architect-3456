@@ -39,7 +39,6 @@
 
 
 
-
 import React from 'react'
 import {
   GET_KIDS_DATA_FAILURE, GET_KIDS_DATA_REQUEST, GET_KIDS_DATA_SUCCESS,
