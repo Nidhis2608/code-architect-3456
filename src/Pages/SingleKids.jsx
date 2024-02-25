@@ -264,7 +264,7 @@ import {
 } from '@chakra-ui/react';
 
 const bookingurl = "https://moke-api-server.onrender.com/Kids"; // Replace with actual booking API URL
-const cartUrl = "YOUR_CART_API_URL"; // Replace with actual cart API URL
+const cartUrl = "https://moke-api-server.onrender.com/Cart"; // Replace with actual cart API URL
 const wishlistUrl = "YOUR_WISHLIST_API_URL"; // Replace with actual wishlist API URL
 const url = "https://moke-api-server.onrender.com/Kids"; // Replace with actual API URL
 
