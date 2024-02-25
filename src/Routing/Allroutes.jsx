@@ -21,8 +21,8 @@
 
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Women from '../Pages/Women';
-import SingleWomens from '../Pages/Womenscard';
+import Womens from '../Pages/Women';
+import SingleWomens from '../Pages/SingleWomen';
 import Kids from '../Pages/Kids';
 import Men from '../Pages/Men';
 import Homepage from '../Pages/Homepage';
@@ -43,7 +43,7 @@ const Allroutes = () => {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/cart" element={<CartPage />} />
-      <Route path="/Women" element={<Women />} />
+      <Route path="/Women" element={<Womens />} />
       <Route path="/singleWomens/:id" element={<PrivateRouting><SingleWomens /></PrivateRouting>} />
       <Route path="/singleKids/:id" element={<PrivateRouting><SingleKids /></PrivateRouting>} />
 
