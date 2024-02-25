@@ -32,7 +32,7 @@ const PopularPlaces = () => {
 
           <Box w={['120%', '100%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn19huyZi0lz4H6Xa0rar1R6OiDK0cX5n1UJyYP--9EGLf1eJWvegZsEtcNPBCgexR2s8&usqp=CAU'
+              src='https://cdn17.nnnow.com/web-images/medium/styles/XWYVJY1LFEI/1668599080148/1.jpg'
               alt='...'
               objectFit='cover'
               w='120%'
@@ -41,13 +41,13 @@ const PopularPlaces = () => {
               style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
             />
             <Text textAlign='center' fontSize='xl' fontWeight='bold' mt='2'>
-              Men's Clothing
+              Men's Clothing Dresses
             </Text>
           </Box>
 
           <Box w={['100%', '60%']} mb={[2, 0]} boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px' borderRadius="12px">
             <Image
-              src='https://www.babycouture.in/blog/wp-content/uploads/2022/01/Children-clothing.png'
+              src='https://i.pinimg.com/736x/85/fd/6c/85fd6cd5d80a291ed0abb70d80b3dbda.jpg'
               alt='...'
               objectFit='cover'
               w='100%'

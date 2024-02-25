@@ -37,7 +37,7 @@ const handleLogout=()=>{
 
 
   return (
-    <Box style={{  position:'fixed', top: 0, width: '100%', zIndex: 1,backgroundColor: '#159895', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', padding: '10px 20px' }}>
+    <Box style={{position:"sticky", width: '100%', zIndex: 1,backgroundColor: '#159895', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', padding: '10px 20px' }}>
       <Flex maxWidth='container.xl' alignItems='center' justify='space-between'>
         <Box>
           <Heading size='md' ml="20" style={{ fontWeight: 'bold', fontSize: '1.5rem'}}>
@@ -83,7 +83,7 @@ const handleLogout=()=>{
                       </ChakraLink>
                       <ChakraLink
                         as={Link}
-                        to='/About'
+                        to='/about'
                         style={{ textDecoration: 'none', color: 'gray.600',fontWeight:'bold' }}
                         _hover={{ color: 'white' }}
                       >

@@ -8,51 +8,69 @@ const ImageCarousel = () => {
 
   const carouselData = [
     {
-      image: 'https://www.realsimple.com/thmb/vDQYdFGqp9s_Gvr4wyCdFh0O8Ag=/4000x2667/filters:no_upscale()/how-to-clean-microfiber-cloth-GettyImages-1314720631-dfb583e54f9e40dea2fea26b6dfaf26f.jpg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEYgoU04pHUUv_ICXGzwDBYSWcS-bNytdi3A&usqp=CAU',
       title: 'Woolen clothes',
       description: `
-      Keep yourself warm and stylish with our cozy collection of woolen clothes. 
-      Embrace the softness and comfort of high-quality fabrics that are perfect for chilly days. 
-      From snug sweaters to chic scarves, our woolen clothes combine warmth with style, making every cold day a fashionable adventure.
-      Whether it's a classic sweater or a trendy scarf, our woolen collection ensures you stay fashionable while beating the cold.
+      
+Introducing our cozy and chic Woolen Clothes Collection, where warmth meets style in perfect harmony. 
+Embrace the colder days with the luxurious softness and comfort of high-quality fabrics meticulously crafted to keep you both snug and fashionable.
+Our collection features an array of winter essentials, from classic sweaters to trendy scarves, designed to elevate your cold-weather wardrobe. 
+Immerse yourself in the sumptuous textures and warmth of our woolen clothes, creating a fashion-forward experience for every chilly day.
+Indulge in the timeless appeal of our snug sweaters, where classic designs meet contemporary trends. Each piece is a testament to both craftsmanship and style,
+ ensuring that you stay cozy without compromising on fashion. Our woolen sweaters provide the perfect
+ blend of comfort and elegance, making them a must-have for the winter season.
       `,
     },
     {
-      image: 'https://images.pexels.com/photos/603022/pexels-photo-603022.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/3/2/tr:w-270,/32e5d72Urbano_URFS0069_1.jpg?rnd=20200526195200',
       title: 'Jeans',
       description: `
       Dive into casual elegance with our versatile jeans collection. 
       From classic blue denim to trendy cuts, our jeans are designed for comfort and style. 
       Experience the perfect fit and durability that makes our jeans a wardrobe essential for every fashion enthusiast.
+      Immerse yourself in the timeless appeal of classic blue denim, a wardrobe staple that effortlessly transitions from day to night. 
+      The versatility of our jeans extends beyond the conventional, 
+      featuring trendy cuts and designs that cater to the preferences of every fashion enthusiast.
+      Designed for those who prioritize both style and ease, our jeans provide the perfect fit that accentuates your 
+      silhouette while ensuring unparalleled comfort throughout the day. 
       `,
     },
     {
       image: 'https://m.media-amazon.com/images/I/718J1laiICL._AC_UY1100_.jpg',
       title: 'Frocks',
       description: `
-      Elevate your look with our charming frocks collection. 
-      Whether it's a playful floral pattern or a sophisticated design, our frocks are perfect for any occasion. 
-      Experience the joy of twirling in our carefully curated selection that combines style and grace.
+      Indulge in the enchanting world of fashion with our delightful frocks collection, designed to elevate your style and infuse a touch of grace into every moment. 
+      Immerse yourself in the allure of our charming frocks, where each piece is a manifestation of timeless elegance and contemporary flair.
+      From playful floral patterns that exude a sense of whimsy to sophisticated designs that embody refined glamour, 
+      our frocks are the epitome of versatile fashion. Whether you're attending a special event, a casual outing, 
+      or simply want to add a touch of flair to your everyday look, our carefully curated selection has the perfect frock for every occasion.
+    Experience the joy of movement as you twirl in our thoughtfully crafted frocks, where each design embraces the essence of femininity 
+    and celebrates the beauty of individual style. The meticulous attention to detail in the construction ensures a flattering fit, making you feel confident and radiant.
+
     `,
     },
     {
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2c__fmEl1K-qJpPX9aKSAwzsYI3KWt0dm5g&usqp=CAU',
+      image: 'https://imagescdn.planetfashion.in/img/app/product/7/749569-8468750.jpg?auto=format&w=494.40000000000003',
       title: 'Dresses',
       description: `
-      Make a statement with our elegant dreeses collection. 
-      Make a lasting statement with our elegant dresses collection. Crafted for formal occasions or chic events, 
-      our dresses are designed to perfection. Explore timeless designs and impeccable tailoring that exude confidence and sophistication.
+      Step into the spotlight with our exquisite Dresses Collection, where each piece is a testament to elegance, sophistication, and timeless style. 
+      Elevate your fashion quotient and make a lasting statement with our meticulously crafted dresses designed for formal occasions, 
+      chic events, or any moment that calls for a touch of glamour.Immerse yourself in a world of unparalleled beauty as you explore our diverse range of dresses, 
+      each crafted with precision and attention to detail.From flowing silhouettes that capture the essence of romance to tailored designs that exude confidence,
+       our collection is a celebration of femininity and individual style.Our dresses are not just garments; they are expressions of grace and refinement. Experience the transformative power of fashion as you slip into our carefully curated selection, where every stitch is a work of art. Impeccable tailoring ensures a perfect fit, allowing you to move with confidence and poise at any event.
       `,
     },
     {
       image: 'https://5.imimg.com/data5/XS/DT/MY-3747740/mens-shirts.jpg',
       title: 'Shirts',
       description: `
-      Immerse yourself in the world of effortless style with our meticulously curated shirts collection. 
-      Crafted for the modern individual, these shirts redefine casual elegance, offering a perfect 
-      balance of sophistication and comfort. Whether you're enjoying a relaxed weekend getaway or navigating through a 
-      laid-back office day, our diverse range of patterns and fabrics ensures you make a lasting impression. Elevate every occasion with the
-       versatility and timeless appeal of our shirt collection, where fashion meets functionality.
+      Discover the epitome of effortless style with our meticulously curated Shirts Collection. 
+      Tailored for the modern individual, our shirts redefine casual elegance, striking the perfect balance between sophistication and comfort. 
+      Whether you find yourself on a relaxed weekend getaway or navigating through a laid-back office day, our diverse range of patterns and fabrics guarantees a lasting impression.
+      Immerse yourself in a world where every shirt is a statement piece, meticulously crafted to enhance your wardrobe with versatility and timeless appeal. 
+      From classic button-downs to contemporary designs, our collection caters to a wide range of tastes, ensuring there's a perfect shirt for every occasion.
+      Experience the luxury of high-quality fabrics that not only feel good against your skin but also stand the test of time. 
+      Our shirts are designed to be more than just clothing; they are a reflection of your personal style and a commitment to impeccable fashion.
       `,
     },
   ];
