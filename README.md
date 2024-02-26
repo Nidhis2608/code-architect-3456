@@ -1,4 +1,6 @@
-![Screenshot 2024-02-26 14 18 01](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/b2cece90-6489-4ab8-a737-4503fb7387a5)### FOGGY CLOTHING 👗
+### FOGGY CLOTHING 👗
+![Screenshot 2024-02-26 14 16 45](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/eb782fa7-6521-49c0-8abd-94ada83a480d)
+
 
 ### Description
 Foggy Clothing is your go-to online fashion destination, bringing you a diverse collection of clothing items to elevate your style. From trendy streetwear to elegant evening wear, Foggy Clothing caters to every fashionista's needs. Our user-friendly platform offers sorting, filtering, and an intuitive admin dashboard to ensure a seamless shopping experience. Join us on this fashion journey, explore our catalog, and stay in vogue with Foggy Clothing.
@@ -50,7 +52,6 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 ### Secure Checkout:
 - Easy-to-use booking interface with customizable options.
 - Integrated and secure payment gateway for safe transactions.
-- ![Uploading Screenshot 2024-02-26 14.19.44.png…]()
 - ![Screenshot 2024-02-26 14 28 39](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/7b9515b1-6e23-4ac6-8961-b02bd0ceb841)
 
 
@@ -58,7 +59,7 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 ### User Reviews and Ratings:
 - Access reviews and ratings for informed decisions.
 - ![Screenshot 2024-02-26 14 17 40](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/f3b01fdf-fa0a-4eb7-b789-1965ca29d411)
-![Uploading Screenshot 2024-02-26 14.19.50.png…]()
+
 
 
 
