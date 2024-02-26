@@ -7,7 +7,7 @@ Foggy Clothing is your go-to online fashion destination, bringing you a diverse 
  Fullstack
 
  ## Deplolyed App
-Frontend: https://https-github-com-nidhis2608-code-architect-3456.vercel.app/
+Frontend: https://code-architect-3456.vercel.app/
 Backend: https://moke-api-server.onrender.com/
 
 ## Video Walkthrough of the project
