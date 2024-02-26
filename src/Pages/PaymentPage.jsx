@@ -79,7 +79,7 @@ const PaymentPage = () => {
         {/* </FormControl> */}
 
         {/* <FormControl isRequired> */}
-          <FormLabel>To Where</FormLabel>
+          <FormLabel>Address</FormLabel>
           <Input type="text" value={to} onChange={(e) => setTo(e.target.value)} />
         {/* </FormControl> */}
 
