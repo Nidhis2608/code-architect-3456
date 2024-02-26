@@ -35,6 +35,7 @@ import SingleMens from '../Pages/SingleMens';
 
   import CartPage from '../Pages/Cartpage';
 import Admin from '../Pages/Admin';
+import PaymentPage from '../Pages/PaymentPage';
 const Allroutes = () => {
 
 
@@ -57,6 +58,7 @@ const Allroutes = () => {
       <Route path="/about" element={<AboutUs />}/>
       <Route path="/signup" element={<Loginsignup />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/payment" element={<PaymentPage />} />
 
     </Routes>
 
