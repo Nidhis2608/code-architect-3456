@@ -12,9 +12,65 @@ Foggy Clothing is your go-to online fashion destination, bringing you a diverse 
 Frontend: https://code-architect-3456.vercel.app/
 Backend: https://moke-api-server.onrender.com/
 
-## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+## Frontend Source (src) Structure
 
+frontend/
+
+├─ src/
+
+│  ├─ Admin/                   
+│  │  ├─ AddKids.jsx          
+│  │  ├─ AddMens.jsx         
+│  │  ├─ AddWomens.jsx      
+│  │  ├─ AdminTable.jsx        
+│  │  ├─ SideDrawer.jsx        
+│  │  └─ Users.jsx             
+│  ├─ CSS/                     
+│  │  ├─ about.css            
+│  │  ├─ login.css            
+│  │  ├─ men.css              
+│  │  └─ signup.css           
+│  ├─ Components/              
+│  │  ├─ Carousel.jsx        
+│  │  ├─ FirstDiv.jsx          
+│  │  ├─ Footer.jsx           
+│  │  ├─ Loginform.jsx         
+│  │  ├─ Navbar.jsx           
+│  │  ├─ PopularDresses.jsx  
+│  │  ├─ Reviews.jsx           
+│  │  └─ signupform.jsx        
+│  ├─ Pages/                   
+│  │  ├─ AboutUs.jsx           
+│  │  ├─ Admin.jsx             
+│  │  ├─ Cartpage.jsx        
+│  │  ├─ Homepage.jsx          
+│  │  ├─ Kids.jsx            
+│  │  ├─ KidsAdmin.jsx        
+│  │  ├─ Kidscard.jsx         
+│  │  ├─ Login.jsx             
+│  │  ├─ Men.jsx             
+│  │  ├─ MensAdmin.jsx         
+│  │  ├─ Menscard.jsx          
+│  │  ├─ PaymentPage.jsx     
+│  │  ├─ SingleKids.jsx        
+│  │  ├─ SingleMens.jsx       
+│  │  ├─ SingleWomen.jsx       
+│  │  ├─ Women.jsx             
+│  │  ├─ WomensAdmin.jsx      
+│  │  └─ Womenscard.jsx        
+│  ├─ Redux/                   
+│  │  ├─ action.js            
+│  │  ├─ actionTypes.js       
+│  │  ├─ reducer.js            
+│  │  └─ store.js              
+│  ├─ Routing/                
+│  │  ├─ Allroutes.jsx         
+│  │  └─ PrivateRouting.jsx    
+│  └─ ...                     
+
+
+## Video Walkthrough of the project
+https://drive.google.com/file/d/1-0vHHfyRbTB85lbVjudPuUfqinH_V5eL/view?usp=drive_link
 ## Features
 Foggy Clothing boasts a range of features designed to enhance your shopping experience:
 
