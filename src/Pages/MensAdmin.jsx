@@ -28,11 +28,12 @@ const MenAdmin = ({props,setState,state}) => {
   // const [state,setState]=useState(true);
   async function DeleteUser(id){
     try {
-        let res= await axios.delete(`https://moke-api-server.onrender.com/Users/${id}`);
+        let res= await axios.delete(`https://moke-api-server.onrender.com/Mens/${id}`);
         console.log(res.data);
         setState(!state)
         console.log(id)
     } catch (error) {
+      // setState(!state)
         console.log(error)
     }
 }
