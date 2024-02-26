@@ -10,6 +10,7 @@ Foggy Clothing is your go-to online fashion destination, bringing you a diverse 
 
  ## Deplolyed App
 Frontend: https://code-architect-3456.vercel.app/
+
 Backend: https://moke-api-server.onrender.com/
 
 ## Frontend Source (src) Structure
