@@ -29,7 +29,8 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 ### Admin Dashboard:
 - Dynamic admin interface to manage and expand the product catalog.
 - Add and update clothing items to keep the collection fresh.
-- [Screenshot 2024-02-26 14 20 50](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/4f9054ec-0289-4f70-8f3c-42f2957a0e8e)
+![Screenshot 2024-02-26 14 20 50](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/5a169921-aa10-4d0b-98f2-7752a0b8e93a)
+
 
 ### Responsive Design:
 - Seamlessly browse on various devices for a consistent experience.
