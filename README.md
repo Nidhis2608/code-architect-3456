@@ -54,6 +54,10 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 - Easy-to-use booking interface with customizable options.
 - Integrated and secure payment gateway for safe transactions.
 - ![Screenshot 2024-02-26 14 28 39](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/7b9515b1-6e23-4ac6-8961-b02bd0ceb841)
+- ![Screenshot 2024-02-26 14 19 44](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/2b95d4bc-a3af-4ab3-8827-9e0dfa2ac0b7)
+- ![Screenshot 2024-02-26 14 19 50](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/c31fbef9-c597-46ed-9aef-c4d5b2c95fa3)
+
+
 
 
 
