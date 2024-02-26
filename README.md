@@ -3,6 +3,16 @@
 ### Description
 Foggy Clothing is your go-to online fashion destination, bringing you a diverse collection of clothing items to elevate your style. From trendy streetwear to elegant evening wear, Foggy Clothing caters to every fashionista's needs. Our user-friendly platform offers sorting, filtering, and an intuitive admin dashboard to ensure a seamless shopping experience. Join us on this fashion journey, explore our catalog, and stay in vogue with Foggy Clothing.
 
+## Project Type
+ Fullstack
+
+ ## Deplolyed App
+Frontend: https://https-github-com-nidhis2608-code-architect-3456.vercel.app/
+Backend: https://moke-api-server.onrender.com/
+
+## Video Walkthrough of the project
+Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+
 ## Features
 Foggy Clothing boasts a range of features designed to enhance your shopping experience:
 
@@ -32,8 +42,21 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 ### User Reviews and Ratings:
 - Access reviews and ratings for informed decisions.
 
-## Deployment
-Visit our [Foggy Clothing App](#) deployed on [Netlify](https://www.netlify.com/).
+
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running.
+
+```bash
+npm install my-project
+cd code-architect-3456
+npm start
+```
+
+### Credentials
+Provide user credentials for autheticated pages
+## UserName:- admin@gmail.com
+## Password:- admin123
+
 
 ## Tech Stack
 - **HTML/CSS:** Used for structuring and styling the user interface.
