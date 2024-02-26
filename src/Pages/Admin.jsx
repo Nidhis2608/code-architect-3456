@@ -30,6 +30,9 @@ import KidsAdmin from './KidsAdmin';
         const [womens,setWomens]=useState([]);
         const [kids,setKids]=useState([]);
         const [state,setState]=useState(true);
+        const [menState, setMenState]=useState(true);
+        const [womenState, setWomenState]=useState(true);
+        const [kidState, setKidState]=useState(true);
 
         console.log(mens);
         console.log(womens);
@@ -94,7 +97,7 @@ import KidsAdmin from './KidsAdmin';
         }
     }
     fetchKids();
-},[])
+},[setKidState])
 
 useEffect(()=>{
     async function fetchWomens(){
@@ -107,7 +110,7 @@ useEffect(()=>{
         }
     }
     fetchWomens();
-},[])
+},[setWomenState])
 
 useEffect(()=>{
     async function fetchMens(){
@@ -120,7 +123,7 @@ useEffect(()=>{
         }
     }
     fetchMens();
-},[])
+},[setMenState])
 
     console.log(users);
   return (
@@ -147,16 +150,16 @@ useEffect(()=>{
     <TabPanel>
    {/* {data.length<=0?"loading......." : */}
     {/* <AdminTable props={data}/> */}
-    <WomenAdmin props={womens} setState={setState} state={state}/>
+    <WomenAdmin props={womens} setState={setWomenState} state={womenState}/>
     <AddWomens />
     {/* } */}
     </TabPanel>
     <TabPanel>
-        <MenAdmin props={mens} setState={setState} state={state}/>
+        <MenAdmin props={mens} setState={setMenState} state={menState}/>
         <AddMens />
     </TabPanel>
     <TabPanel>
-        <KidsAdmin props={kids} setState={setState} state={state}/>
+        <KidsAdmin props={kids} setState={setKidState} state={kidState}/>
         <AddKids />
     </TabPanel>
     <TabPanel>
