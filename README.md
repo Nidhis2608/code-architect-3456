@@ -1,5 +1,5 @@
 ### FOGGY CLOTHING 👗
-![Screenshot 2024-02-26 14 16 45](https://github.com/Nidhis2608/code-architect-3456/assets/146926520/eb782fa7-6521-49c0-8abd-94ada83a480d)
+<img width="945" alt="image" src="https://github.com/Nidhis2608/code-architect-3456/assets/147683595/2f36d6af-073a-49dd-8c01-7f153f5bfc66">
 
 
 ### Description
