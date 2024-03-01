@@ -46,6 +46,8 @@ const WomenAdmin = ({props,setState,state}) => {
           <Th>Image</Th>
           <Th>Title</Th>
           <Th>Price</Th>
+          <Th>Category</Th>
+          <Th>Rating</Th>
           <Th>Action</Th>
         </Tr>
       </Thead>
@@ -63,7 +65,8 @@ const WomenAdmin = ({props,setState,state}) => {
           </Td>
           <Td>{item.title}</Td>
           <Td>{item.price}</Td>
-         
+          <Td>{item.category}</Td>
+          <Td>{item.rating}</Td>
           <Td><Button colorScheme='red' 
           onClick={()=>{DeleteUser(item.id|item.title)}} 
           >Delete</Button></Td>
