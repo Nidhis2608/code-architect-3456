@@ -62,7 +62,7 @@ const MenAdmin = ({props,setState,state}) => {
         return (
           <Tr key={item.id} >
           <Td >
-           <Image src={item.image} style={{width:"40px"}}/>
+           <Image src={item.image} style={{width:"50px"}}/>
           </Td>
           <Td>{item.title}</Td>
           <Td>{item.price}</Td>
