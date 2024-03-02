@@ -150,7 +150,7 @@ const CartPage = () => {
                       <Text align="left">{item.country}</Text>
                     </Box>
                     <Box py='2'>
-                      <Text align="left">Price(INR): {item.price}</Text>
+                      <Text align="left">Price(INR):₹ {item.price}</Text>
                     </Box>
                   </CardBody>
 
