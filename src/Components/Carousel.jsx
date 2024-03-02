@@ -19,6 +19,7 @@ Immerse yourself in the sumptuous textures and warmth of our woolen clothes, cre
 Indulge in the timeless appeal of our snug sweaters, where classic designs meet contemporary trends. Each piece is a testament to both craftsmanship and style,
  ensuring that you stay cozy without compromising on fashion. Our woolen sweaters provide the perfect
  blend of comfort and elegance, making them a must-have for the winter seasons.
+ Its the trendiest clothes present within .
       `,
     },
     {
