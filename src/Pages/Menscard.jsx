@@ -42,7 +42,7 @@ const SingleMen = ({ tour }) => {
         <Text data-cy="product-description">{tour['title']}</Text>
         </Heading>
 
-        <Text data-cy="product-description">{tour['price']}</Text>
+        <Text data-cy="product-description">₹ {tour['price']}</Text>
         {/* <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
           PRICE:{tour['product-price']}
         </Text> */}
