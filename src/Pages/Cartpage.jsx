@@ -56,10 +56,12 @@ const CartPage = () => {
                 />
 
                 <Stack align="left" justify="center">
+
                   <CardBody>
                     <Heading size='md'>{item.location}</Heading>
                     <Box py='2'>
                       <Text align="left">{item.country}</Text>
+
                     </Box>
                     <Box py='2'>
                       <Text align="left">Price(INR): ₹ {item.price}</Text>
@@ -83,6 +85,7 @@ const CartPage = () => {
      
     </div>
   );
+  
 };
 
 export default CartPage;
