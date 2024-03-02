@@ -34,7 +34,7 @@ const CartPage = () => {
       ) : iserror ? (
         <h1>Error loading cart items</h1>
       ) : mybooking.length === 0 ? (
-        <h2>No items in the cart!</h2>
+        <h2>No items in the cart ! </h2>
       ) : (
         <div>
           {mybooking.map((item, index) => (
@@ -85,7 +85,7 @@ const CartPage = () => {
      
     </div>
   );
-  
+
 };
 
 export default CartPage;
