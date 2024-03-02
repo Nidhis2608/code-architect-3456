@@ -47,9 +47,15 @@ const SingleWomen = ({ tour }) => {
         </Heading>
 
         <Text data-cy="product-description">₹ {tour['price']}</Text>
+
         <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
         <RenderRatingStars rating={tour['rating']}  />
         </Text>
+
+        {/* <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
+          PRICE:{tour['product-price']}
+        </Text> */}
+
         {/* <Text data-cy="product-offer" color="teal.500" mt={2}>OFFER:{tour['offer']}</Text> */}
        
         <Button
