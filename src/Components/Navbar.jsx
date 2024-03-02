@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import {
   Box,
@@ -113,7 +116,7 @@ export const Navbar = () => {
                         to='/women'
                         style={{
                           textDecoration: 'none',
-                          color: activeSection === '/women' ? 'white' : 'gray.600',
+                          color: activeSection === 'white',
                           fontWeight: 'bold',
                           borderBottom: activeSection === '/women' && '2px solid white',
                         }}
@@ -126,7 +129,7 @@ export const Navbar = () => {
                         to='/kids'
                         style={{
                           textDecoration: 'none',
-                          color: activeSection === '/kids' ? 'white' : 'gray.600',
+                          color: activeSection === 'white',
                           fontWeight: 'bold',
                           borderBottom: activeSection === '/kids' && '2px solid white',
                         }}
@@ -139,7 +142,7 @@ export const Navbar = () => {
                         to='/cart'
                         style={{
                           textDecoration: 'none',
-                          color: activeSection === '/cart' ? 'white' : 'gray.600',
+                          color: activeSection === 'white',
                           fontWeight: 'bold',
                           borderBottom: activeSection === '/cart' && '2px solid white',
                         }}
@@ -152,7 +155,7 @@ export const Navbar = () => {
                         to='/about'
                         style={{
                           textDecoration: 'none',
-                          color: activeSection === '/about' ? 'white' : 'gray.600',
+                          color: activeSection === 'white',
                           fontWeight: 'bold',
                           borderBottom: activeSection === '/about' && '2px solid white',
                         }}
@@ -160,11 +163,61 @@ export const Navbar = () => {
                       >
                         About
                       </ChakraLink>
+                      <ChakraLink
+        as={Link}
+        to='/signup'
+        style={{
+          textDecoration: 'none',
+          color: activeSection === '/signup' ? 'white' : 'inherit',
+          fontWeight: 'bold',
+        }}
+        onClick={() => {
+          setActiveSection('/signup');
+          onClose(); // Close the drawer after clicking on an item
+        }}
+      >
+        Signup
+      </ChakraLink>
+      <ChakraLink
+        as={Link}
+        to='/login'
+        style={{
+          textDecoration: 'none',
+          color: activeSection === '/login' ? 'white' : 'inherit',
+          fontWeight: 'bold',
+        }}
+        onClick={() => {
+          setActiveSection('/login');
+          onClose(); // Close the drawer after clicking on an item
+        }}
+      >
+        Login
+      </ChakraLink>
+      {isAuth && (
+        <ChakraLink
+          as={Link}
+          to='/'
+          style={{
+            textDecoration: 'none',
+            color: 'white',
+            fontWeight: 'bold',
+          }}
+          onClick={() => {
+            handleLogout();
+            onClose(); // Close the drawer after clicking on an item
+          }}
+        >
+          Logout
+        </ChakraLink>
+      )}
+
+
                     </Stack>
                   </DrawerBody>
                 </DrawerContent>
               </Drawer>
             </>
+            
           ) : (
             <>
               <ChakraLink
@@ -173,7 +226,6 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  // color: activeSection === '/' ? 'white' : 'gray.600',
                   color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
@@ -190,7 +242,6 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  // color: activeSection === '/men' ? 'white' : 'gray.600',
                   color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
@@ -207,7 +258,7 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  color: activeSection === '/women' ? 'white' : 'gray.600',
+                  color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
                   fontSize: '20px',
@@ -223,7 +274,7 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  color: activeSection === '/kids' ? 'white' : 'gray.600',
+                  color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
                   fontSize: '20px',
@@ -239,7 +290,7 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  color: activeSection === '/cart' ? 'white' : 'gray.600',
+                  color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
                   fontSize: '20px',
@@ -255,7 +306,7 @@ export const Navbar = () => {
                 style={{
                   textDecoration: 'none',
                   padding: '10px',
-                  color: activeSection === '/about' ? 'white' : 'gray.600',
+                  color: activeSection === 'white',
                   transition: 'color 0.3s',
                   fontWeight: 'bold',
                   fontSize: '20px',
@@ -265,10 +316,8 @@ export const Navbar = () => {
               >
                 About
               </ChakraLink>
-            </>
-          )}
-
-          {isAuth ? (
+              
+              {isAuth ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
               <h2>Hello, {users[0].firstName}</h2>
               <Link to='/'>
@@ -323,6 +372,66 @@ export const Navbar = () => {
               </ChakraLink>
             </Stack>
           )}
+
+
+            </>
+          )}
+
+          {/* {isAuth ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+              <h2>Hello, {users[0].firstName}</h2>
+              <Link to='/'>
+                <Button onClick={handleLogout}> Log out</Button>
+              </Link>
+            </div>
+          ) : (
+            <Stack direction='row' spacing={2}>
+              <ChakraLink
+                as={Link}
+                to='/signup'
+                style={{ textDecoration: 'none' }}
+                onClick={() => setActiveSection('/signup')}
+              >
+                <Button
+                  leftIcon={<FaUserInjured />}
+                  colorScheme='#159895'
+                  variant='solid'
+                  fontWeight='bold'
+                  size='md'
+                  backgroundColor='black'
+                  color='white'
+                  _hover={{
+                    backgroundColor: 'white',
+                    color: 'black',
+                  }}
+                >
+                  SignUp
+                </Button>
+              </ChakraLink>
+              <ChakraLink
+                as={Link}
+                to='/login'
+                style={{ textDecoration: 'none' }}
+                onClick={() => setActiveSection('/login')}
+              >
+                <Button
+                  leftIcon={<FaUserInjured />}
+                  colorScheme='gray'
+                  variant='solid'
+                  fontWeight='bold'
+                  size='md'
+                  backgroundColor='black'
+                  color='white'
+                  _hover={{
+                    backgroundColor: 'white',
+                    color: 'black',
+                  }}
+                >
+                  Login
+                </Button>
+              </ChakraLink>
+            </Stack>
+          )} */}
         </Flex>
       </Flex>
     </Box>
