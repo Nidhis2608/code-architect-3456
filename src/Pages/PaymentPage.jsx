@@ -10,8 +10,8 @@ const PaymentPage = () => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [from, setFrom] = useState('');
-  const [to, setTo] = useState('');
+  // const [from, setFrom] = useState('');
+   const [to, setTo] = useState('');
   const [amount, setAmount] = useState('');
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const PaymentPage = () => {
   }, [location.state]);
 
   const handlePayAmount = async () => {
-        if (!name || !email || !from || !to || !amount) {
+        if (!name || !email ||  !to || !amount) {
           toast({
             title: 'Fill in all details',
             status: 'warning',
@@ -74,12 +74,12 @@ const PaymentPage = () => {
         {/* </FormControl> */}
 
         {/* <FormControl isRequired> */}
-          <FormLabel>From Where</FormLabel>
-          <Input type="text" value={from} onChange={(e) => setFrom(e.target.value)} />
+          {/* <FormLabel>From Where</FormLabel>
+          <Input type="text" value={from} onChange={(e) => setFrom(e.target.value)} /> */}
         {/* </FormControl> */}
 
         {/* <FormControl isRequired> */}
-          <FormLabel>To Where</FormLabel>
+          <FormLabel>Address</FormLabel>
           <Input type="text" value={to} onChange={(e) => setTo(e.target.value)} />
         {/* </FormControl> */}
 

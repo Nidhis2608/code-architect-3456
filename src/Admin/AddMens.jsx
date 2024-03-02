@@ -129,13 +129,15 @@ export const AddMens = ({ props }) => {
   const [image, setImage] = useState('');
   // const [description, setDescription] = useState('');
   const [title, setTitle] = useState('');
+  const [category,setCategory]=useState('');
+  const [rating,setRating]=useState('');
   const toast = useToast();
 
   console.log(price, image, title);
 
   const handleSubmit = async () => {
     try {
-      await postData({ image, price, title });
+      await postData({ image, price, title,category,rating });
       console.log('Data posted successfully');
 
       toast({
@@ -188,13 +190,14 @@ export const AddMens = ({ props }) => {
               <FormLabel>Price</FormLabel>
               <Input placeholder='Price' onChange={(e) => setPrice(e.target.value)} />
             </FormControl>
-            {/* <FormControl mt={4}>
-              <FormLabel>Description</FormLabel>
-              <Textarea
-                placeholder='Description about the Location'
-                onChange={(e) => setDescription(e.target.value)}
-              />
-            </FormControl> */}
+            <FormControl mt={4}>
+              <FormLabel>Category</FormLabel>
+              <Input placeholder='Category' onChange={(e) => setCategory(e.target.value)} />
+            </FormControl>
+            <FormControl mt={4}>
+              <FormLabel>Rating</FormLabel>
+              <Input placeholder='Rating' onChange={(e) => setRating(e.target.value)} />
+            </FormControl>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={handleSubmit}>
