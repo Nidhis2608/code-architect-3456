@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import RenderRatingStars from '../Components/Rating';
 
 const SingleMen = ({ tour }) => {
   const navigate = useNavigate();
@@ -43,9 +44,15 @@ const SingleMen = ({ tour }) => {
         </Heading>
 
         <Text data-cy="product-description">₹ {tour['price']}</Text>
+
+        <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
+          <RenderRatingStars rating={tour['rating']}  />
+        </Text>
+
         {/* <Text fontSize="sm" data-cy="product-price" fontWeight="bold" >
           PRICE:{tour['product-price']}
         </Text> */}
+
         {/* <Text data-cy="product-offer" color="teal.500" mt={2}>OFFER:{tour['offer']}</Text> */}
        
         <Button
