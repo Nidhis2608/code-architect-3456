@@ -48,7 +48,7 @@ const SingleKid = ({ tour }) => {
         <Text data-cy="product-description">{tour['title']}</Text>
         </Heading>
 
-        <Text data-cy="product-description">{tour['price']}</Text>
+        <Text data-cy="product-description">₹ {tour['price']}</Text>
 
        
         <Button

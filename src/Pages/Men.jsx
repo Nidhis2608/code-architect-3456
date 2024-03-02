@@ -1,12 +1,14 @@
+
+
+
+
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom'; // Import useLocation
+import { useLocation } from 'react-router-dom';
 
-import {  fetchDestinationData2 } from '../Redux/action';
-
-import  SingleMen  from './Menscard';
+import { fetchDestinationData2 } from '../Redux/action';
+import SingleMen from './Menscard';
 import { Box, Button, Select, HStack, Center } from '@chakra-ui/react';
-
 
 const Men = () => {
   const dispatch = useDispatch();
@@ -16,11 +18,9 @@ const Men = () => {
   const itemsPerPage = 8;
   const [sortOrder, setSortOrder] = useState('');
   const [selectedCountry, setSelectedCountry] = useState('');
-
   const [filterByText, setFilterByText] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
 
-  
-  // Use useLocation to get the query parameter
   const location = useLocation();
   const searchInput = new URLSearchParams(location.search).get('country');
 
@@ -32,86 +32,60 @@ const Men = () => {
     setFilteredTours(destination);
   }, [destination]);
 
-
-  
-
   useEffect(() => {
     let sortedTours = [...destination];
-    
 
     if (sortOrder === 'asc' || sortOrder === 'desc') {
       sortedTours = sortedTours.sort((a, b) => {
-        // Parse the offer prices as numbers for proper sorting
         const costA = parseInt(a.price);
         const costB = parseInt(b.price);
         return sortOrder === 'asc' ? costA - costB : costB - costA;
       });
     }
 
-    
-
     if (selectedCountry) {
-      const filtered = sortedTours.filter((tour) => {
+      const filteredByCountry = sortedTours.filter((tour) => {
         const countryValue = tour.country.toLowerCase();
         return countryValue.includes(selectedCountry.toLowerCase());
       });
-      setFilteredTours(filtered);
-    } else {
-      setFilteredTours(sortedTours);
+      sortedTours = filteredByCountry;
     }
-  }, [destination, sortOrder, selectedCountry,searchInput]);
 
-  
-  useEffect(() => {
+    if (selectedCategory) {
+      const filteredByCategory = sortedTours.filter((tour) => {
+        const categoryValue = tour.category.toLowerCase();
+        return categoryValue.includes(selectedCategory.toLowerCase());
+      });
+      sortedTours = filteredByCategory;
+    }
+
     if (searchInput) {
       const filtered = destination.filter((tour) =>
-         tour.country.toLowerCase().includes(searchInput.toLowerCase()) ||
-        // tour.country && tour.country.toLowerCase().includes(searchInput.toLowerCase())
-        tour.country &&  tour.country.toLowerCase().includes(searchInput.toLowerCase())
+        tour.country.toLowerCase().includes(searchInput.toLowerCase()) ||
+        tour.country && tour.country.toLowerCase().includes(searchInput.toLowerCase())
       );
-      setFilteredTours(filtered);
+      sortedTours = filtered;
     }
-  }, [searchInput, destination]);
 
-
-  // useEffect(() => {
-  //   setSelectedCountry('');
-  // }, [searchInput]);
-  // useEffect(() => {
-  //   filteredTours.forEach((tour) => {
-  //     console.log(tour['customFade src']);
-  //   });
-  // }, [filteredTours]);
-
-
-  useEffect(() => {
     if (filterByText) {
       const filteredByText = destination.filter((tour) =>
-      tour["title"] && 
+        tour["title"] &&
         tour["title"].toLowerCase().includes(filterByText.toLowerCase())
       );
-      setFilteredTours(filteredByText);
-    } else {
-      setFilteredTours(destination);
+      sortedTours = filteredByText;
     }
-  }, [filterByText, destination]);
 
-  
+    setFilteredTours(sortedTours);
+  }, [destination, sortOrder, selectedCountry, selectedCategory, searchInput, filterByText]);
+
+  const getUniqueCategories = () => {
+    const uniqueCategories = [...new Set(destination.map((tour) => tour["category"]))];
+    return uniqueCategories;
+  };
+
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredTours.slice(indexOfFirstItem, indexOfLastItem);
-
-
-
-  
-
-  useEffect(() => {
-    currentItems.forEach((item) => {
-      console.log('Tour Object:', item);
-      console.log('Image URL:', item['image']);
-    });
-  }, [currentItems]);
-  
 
   const nextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
@@ -121,14 +95,7 @@ const Men = () => {
     setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
   };
 
-  const getUniqueTexts = () => {
-    const uniqueTexts = [...new Set(destination.map((tour) => tour["title"]))];
-    return uniqueTexts;
-  };
-
-  
-
- return (
+  return (
     <Box>
       <Box>
         {isloading ? (
@@ -149,35 +116,31 @@ const Men = () => {
                   <option value="desc">Descending</option>
                 </Select>
 
+
                 <Select
                   border="1px solid teal"
-                  placeholder="Filter by text"
-                  onChange={(e) => setFilterByText(e.target.value)}
-                  value={filterByText}
+                  placeholder="Filter by category"
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  value={selectedCategory}
                 >
-                  <option value="">Brands</option>
-                  {getUniqueTexts().map((text) => (
-                    <option key={text} value={text}>
-                      {text}
+                  <option value="">All Categories</option>
+                  {getUniqueCategories().map((category) => (
+                    <option key={category} value={category}>
+                      {category}
                     </option>
                   ))}
                 </Select>
               </HStack>
             </Center>
 
-            <Box data-cy="tour-list" className="tour-list" mt="10" style={{ marginLeft: '90px' }} >
+            <Box data-cy="tour-list" className="tour-list" mt="10" style={{ marginLeft: '90px' }}>
               <Box
-              gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(4, 1fr)'}}
-                style={{ display: 'grid'  , gap: '16px', justifyContent: 'center' }}
+                gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(4, 1fr)' }}
+                style={{ display: 'grid', gap: '16px', justifyContent: 'center' }}
               >
-                {/* {currentItems.map((item) => (
-                  <SingleKid key={item.id} tour={item} />
-                ))} */}
-                {currentItems.map((item) => {
-  console.log(item['image']); 
- 
-  return <SingleMen key={item.id} tour={item} />;
-})}
+                {currentItems.map((item) => (
+                  <SingleMen key={item.id} tour={item} />
+                ))}
               </Box>
 
               <Center mt={4}>
@@ -203,7 +166,4 @@ const Men = () => {
   );
 };
 
-
-
-export default Men
-
+export default Men;
