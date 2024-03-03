@@ -130,8 +130,9 @@ Foggy Clothing boasts a range of features designed to enhance your shopping expe
 Detailed instructions on how to install, configure, and get the project running.
 
 ```bash
-npm install my-project
+git clone https://github.com/Nidhis2608/code-architect-3456.git
 cd code-architect-3456
+npm i
 npm start
 ```
 
