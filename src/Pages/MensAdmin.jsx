@@ -41,7 +41,7 @@ const MenAdmin = ({props,setState,state}) => {
 
     <TableContainer p={'10'}>
     <Table variant='striped' >
-      <TableCaption>Mens Available</TableCaption>
+      {/* <Th>Mens Available</Th> */}
       <Thead>
         <Tr>
           <Th>Image</Th>
