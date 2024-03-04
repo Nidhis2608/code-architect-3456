@@ -85,6 +85,10 @@ const Women = () => {
     setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
   };
 
+  useEffect(()=> {
+    document.title = "Foggy | Women";
+    },[]);
+
   return (
     <Box>
       <Box>

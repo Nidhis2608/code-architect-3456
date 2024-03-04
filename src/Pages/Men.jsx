@@ -94,6 +94,9 @@ const Men = () => {
   const prevPage = () => {
     setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
   };
+  useEffect(()=> {
+    document.title = "Foggy | Men";
+    },[]);
 
   return (
     <Box>

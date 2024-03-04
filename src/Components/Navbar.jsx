@@ -23,7 +23,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaUserInjured, FaBars } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { userLogout } from '../Redux/action';
-import BONVOYAGELOGO from '../images/Foggy_logo.jpg';
+import BONVOYAGELOGO from '../images/Foggy_logo.png';
 
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,7 +54,7 @@ export const Navbar = () => {
       <Flex maxWidth='container.xl' alignItems='center' justify='space-between'>
         <Box>
           <Heading size='md' ml='20' style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>
-            <img style={{ height: '60px', width: '70px' }} src={BONVOYAGELOGO} alt='' />
+            <img style={{ height: '60px', width: '80px' }} src={BONVOYAGELOGO} alt='' />
           </Heading>
         </Box>
 

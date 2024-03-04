@@ -113,6 +113,9 @@ const CartPage = () => {
   const handleNavi = (item) => {
     navigate("/payment", { state: { amount: item.price } });
   };
+  useEffect(()=> {
+    document.title = "Foggy | Cart";
+    },[]);
 
   return (
     <div>
