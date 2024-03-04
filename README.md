@@ -5,17 +5,13 @@
 ### Description
 Foggy Clothing is your go-to online fashion destination, bringing you a diverse collection of clothing items to elevate your style. From trendy streetwear to elegant evening wear, Foggy Clothing caters to every fashionista's needs. Our user-friendly platform offers sorting, filtering, and an intuitive admin dashboard to ensure a seamless shopping experience. Join us on this fashion journey, explore our catalog, and stay in vogue with Foggy Clothing.
 
-## Project Type
- Fullstack
-
  ## Deplolyed App
 Frontend: https://foggy-clothing.vercel.app/
 
 Backend: https://moke-api-server.onrender.com/
 
-## Frontend Source (src) Structure
+## Folder Structure
 
-frontend/
 
 ├─ src/
 
