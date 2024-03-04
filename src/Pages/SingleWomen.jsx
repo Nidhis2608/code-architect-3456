@@ -147,9 +147,9 @@ const SingleWomens = () => {
               <Heading mb={2} size="lg">
                 {singleData.title}
               </Heading>
-              <Text fontSize="lg" color="black.500" mb={4}>
+              {/* <Text fontSize="lg" color="black.500" mb={4}>
               ₹{singleData.price}
-              </Text>
+              </Text> */}
               <Text>{singleData.description}</Text>
               <Text mt={4} fontWeight="bold">
                 Price: ₹{singleData.price}
