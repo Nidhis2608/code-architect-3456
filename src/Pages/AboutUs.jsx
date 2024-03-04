@@ -1,5 +1,9 @@
 import React from 'react'
 import "../CSS/about.css"
+import nidhi from "../images/nidhi.jpg";
+import anshu from "../images/anshu.jpg";
+import khadim from '../images/01.jpg';
+import gulshaba from '../images/gulshaba.jpg';
 const AboutUs = () => {
   return (
     <div className="About-us">
@@ -82,7 +86,7 @@ const AboutUs = () => {
         <div className="our-team">
           <div>
             <img
-              src="https://www.freeiconspng.com/uploads/blue-user-icon-32.jpg"
+              src={nidhi}
               alt=""
               className="our-team-img"
             />{" "}
@@ -90,7 +94,7 @@ const AboutUs = () => {
           </div>
           <div>
             <img
-              src="https://www.freeiconspng.com/uploads/blue-user-icon-32.jpg"
+              src={anshu}
               alt=""
               className="our-team-img"
             />{" "}
@@ -98,7 +102,7 @@ const AboutUs = () => {
           </div>
           <div>
             <img
-              src="https://www.freeiconspng.com/uploads/blue-user-icon-32.jpg"
+              src={gulshaba}
               alt=""
               className="our-team-img"
             />{" "}
