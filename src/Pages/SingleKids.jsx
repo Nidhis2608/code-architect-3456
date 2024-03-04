@@ -148,11 +148,11 @@ const SingleKids = () => {
                 {singleData.title}
               </Heading>
               <Text fontSize="lg" color="black.500" mb={4}>
-                {singleData.price}
+              ₹{singleData.price}
               </Text>
               <Text>{singleData.description}</Text>
               <Text mt={4} fontWeight="bold">
-                Price: {singleData.price}
+                Price: ₹{singleData.price}
               </Text>
             </Box>
           </Flex>
@@ -160,9 +160,9 @@ const SingleKids = () => {
           <Box mt={4} textAlign="center">
             <Text mt={2} mb={4}>
               {timer > 0 ? (
-                `Book now and get ${singleData.discount} off! (Offer ends in ${Math.floor(timer / 60)}:${timer % 60} minutes)`
+                `Book now and get 15% off! (Offer ends in ${Math.floor(timer / 60)}:${timer % 60} minutes)`
               ) : (
-                `Book now and get ${singleData.discount} off!`
+                `Book now and get 15% off!`
               )}
             </Text>
             <Button
