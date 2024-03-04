@@ -25,6 +25,9 @@ const CartPage = () => {
   const handleNavi = (item) => {
     navigate("/payment", { state: { amount: item.price } });
   };
+  useEffect(()=> {
+    document.title = "Foggy | Cart";
+    },[]);
 
   return (
     <div>
@@ -64,7 +67,11 @@ const CartPage = () => {
 
                     </Box>
                     <Box py='2'>
-                      <Text align="left">Price(INR): ₹ {item.price}</Text>
+
+                      <Text align="left">Price(INR):₹ {item.price}</Text>
+
+                  
+
                     </Box>
                   </CardBody>
 

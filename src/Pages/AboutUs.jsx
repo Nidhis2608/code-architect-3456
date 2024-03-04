@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../CSS/about.css"
-import nidhi from "../images/nidhi.jpg";
-import anshu from "../images/anshu.jpg";
-import khadim from '../images/01.jpg';
-import gulshaba from '../images/gulshaba.jpg';
+
+import Anshu  from "../images/Anshu.jpg"
+import khadim from "../images/khadim.jpg"
+import Gulshaba from "../images/Gulshaba.jpeg"
+import Nidhi from "../images/Nidhi.jpeg"
+
+
 const AboutUs = () => {
+  useEffect(()=> {
+  document.title = "Foggy | About Us";
+  },[]);
   return (
     <div className="About-us">
       <div id="cover">
@@ -86,35 +92,43 @@ const AboutUs = () => {
         <div className="our-team">
           <div>
             <img
-              src={nidhi}
-              alt=""
+
+              src={Nidhi}
+              alt="Nidhi"
+
+        
+
               className="our-team-img"
             />{" "}
             <h3>Nidhi</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
-              src={anshu}
-              alt=""
+
+              src={Anshu}
+              alt="Anshu"
+
               className="our-team-img"
             />{" "}
             <h3>Anshu</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
-              src={gulshaba}
-              alt=""
+
+              src={Gulshaba}
+              alt="Gulshaba"
+
               className="our-team-img"
             />{" "}
             <h3>Gulshaba</h3> <p>Full Stack Web Developer</p>
           </div>
           <div>
             <img
-              src="https://www.freeiconspng.com/uploads/blue-user-icon-32.jpg"
-              alt=""
+              src={khadim}
+              alt="Khadim"
               className="our-team-img"
             />{" "}
-            <h3>Khadim Khan</h3> <p>Full Stack Web Developer</p>
+            <h3>Khadim</h3> <p>Full Stack Web Developer</p>
           </div>
         </div>
       </div>

@@ -109,6 +109,10 @@ const Kids = () => {
     return uniqueCategories;
   };
 
+  useEffect(()=> {
+    document.title = "Foggy | Kids";
+    },[]);
+
   return (
     <Box>
       <Box>
