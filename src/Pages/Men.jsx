@@ -34,7 +34,7 @@ const Men = () => {
 
   useEffect(() => {
     let sortedTours = [...destination];
-
+  
     if (sortOrder === 'asc' || sortOrder === 'desc') {
       sortedTours = sortedTours.sort((a, b) => {
         const costA = parseInt(a.price);
@@ -42,42 +42,26 @@ const Men = () => {
         return sortOrder === 'asc' ? costA - costB : costB - costA;
       });
     }
-
+  
     if (selectedCountry) {
-      const filteredByCountry = sortedTours.filter((tour) => {
-        const countryValue = tour.country.toLowerCase();
-        return countryValue.includes(selectedCountry.toLowerCase());
-      });
-      sortedTours = filteredByCountry;
+      sortedTours = sortedTours.filter((tour) => tour.country?.toLowerCase().includes(selectedCountry.toLowerCase()));
     }
-
+  
     if (selectedCategory) {
-      const filteredByCategory = sortedTours.filter((tour) => {
-        const categoryValue = tour.category.toLowerCase();
-        return categoryValue.includes(selectedCategory.toLowerCase());
-      });
-      sortedTours = filteredByCategory;
+      sortedTours = sortedTours.filter((tour) => tour.category?.toLowerCase().includes(selectedCategory.toLowerCase()));
     }
-
+  
     if (searchInput) {
-      const filtered = destination.filter((tour) =>
-        tour.country.toLowerCase().includes(searchInput.toLowerCase()) ||
-        tour.country && tour.country.toLowerCase().includes(searchInput.toLowerCase())
-      );
-      sortedTours = filtered;
+      sortedTours = sortedTours.filter((tour) => tour.country?.toLowerCase().includes(searchInput.toLowerCase()));
     }
-
+  
     if (filterByText) {
-      const filteredByText = destination.filter((tour) =>
-        tour["title"] &&
-        tour["title"].toLowerCase().includes(filterByText.toLowerCase())
-      );
-      sortedTours = filteredByText;
+      sortedTours = sortedTours.filter((tour) => tour["title"]?.toLowerCase().includes(filterByText.toLowerCase()));
     }
-
+  
     setFilteredTours(sortedTours);
   }, [destination, sortOrder, selectedCountry, selectedCategory, searchInput, filterByText]);
-
+  
   const getUniqueCategories = () => {
     const uniqueCategories = [...new Set(destination.map((tour) => tour["category"]))];
     return uniqueCategories;
